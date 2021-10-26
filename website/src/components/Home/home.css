@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    min-width: 100vw;
+    min-height: 100vh; 
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+section{
+    padding:  0.5em 1.5em;
+    margin: 2.5em 0 2.5em 0;
+}
+
+.blue{
+    color: #20405d;
+    /* color: #18499A;; */
+}
+
+.red{
+    color: #DC2D2D;
+    /* color: rgb(153, 10, 10) !important; */
+}
+
+button{
+    padding: 0.5em 2em;
+    background-color: #DC2D2D;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    font-size: 1em;
+}
+
+/***** RECAUDACION *****/
+
+#video-youtube-incrustado{
+    border-radius: 12px;
+    margin: 0 0 2em 0;
+    height: 100%;
+}
+
+#Recaudacion{
+    margin: 5.5em 0 2.5em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#Recaudacion p{
+    font-size: 1.2em;
+    color: rgb(85, 84, 84);
+}
+
+h2{
+    font-weight: 450;
+    text-align: center;
+    color: #DC2D2D;
+}
+
+#barra{
+    height: 20px;
+    position: relative;
+    background: rgba(177, 177, 177, 0.455);
+    border-radius: 4px;
+    padding: 2px;
+}
+
+#barra span{
+    display: block;
+    width: 80%;
+    height: 100%;
+    border-radius: 4px;
+    background-color:#20405d;
+    position: relative;
+    overflow: hidden;
+}
+
+/***** Beneficiario *****/
+
+#Beneficiario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#box-1{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding: 2em;
+    border-radius: 10px;
+    border: rgb(165, 165, 165);
+    box-shadow: 0px 0px 12px -4px rgb(0 0 0 / 48%);
+}
+
+#box-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#Beneficiario h3{
+    text-align: center;
+    margin: 0 0 0.5em 0;
+}
+
+#Beneficiario p{
+    margin: 0.3em 0;
+}
+
+#Beneficiario figure{
+    width: 8.8em;
+    height: 8.8em;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#Beneficiario img{
+    width: 9.5em;
+    height: 19em;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.flex-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/***** Pagos *****/
+
+#Pagos article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0;
+    padding: 1em;
+    border-radius: 10px;
+    border: rgb(168, 167, 167);
+    box-shadow: 0px 0px 12px -4px rgb(0 0 0 / 48%);
+    /* box-shadow: 0px 0px 67px -27px rgba(0,0,0,0.67); */
+}
+
+/* #Pagos article::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: " ";
+    background: linear-gradient(to bottom, #d3d1d1, #d3d1d1);
+    width: 100%;
+    height: 97%;
+    filter: blur(10px);
+    z-index: -1;
+} */
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#flex-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+form p{
+    text-align: center;
+}
+
+form figure{
+    width: 11em;
+    height: 100%;
+}
+
+form img{
+    width: 100%;
+    height: 100%;
+}
+
+label{
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+input{
+    width: 100%;
+    margin: 0.5em 0;
+    border: none;
+    background: rgb(231, 231, 231);
+    border-radius: 6px;
+    padding: 0.5em 0.3em;
+}
+
+input:focus{
+    outline: none;
+}
+
+.radio {
+    width: 15%;
+}
+
+#fieldset-radio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5em 0 0;
+}
+
+fieldset{
+    border: none;
+    width: 100%;
+    padding: 0;
+    margin: 0.5em 0;
+}
+
+
+/***** Transformamos *****/
+
+#Transformamos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#Transformamos figure{
+    width: 100%;
+    height: 100%;
+}
+
+
+#Transformamos img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/***** Viaje de Ida *****/
+
+#viajeIMG{
+    width: 100%;
+}
+
+#ViajeIda h2{
+    font-size: 1.7em;
+}
+
+#ViajeIda h3{
+    text-align: center;
+}
+
+/***** Nelson *****/
+
+#Nelson{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Nelson h3{
+    text-align: center;
+}
+
+#Nelson p{
+    margin: 0 0 0.3em 0;
+}
+
+#Nelson figure{
+    width: 8.8em;
+    height: 8.8em;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#Nelson img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 67px -27px rgb(0 0 0 / 67%);
+    object-fit: cover;
+}
+
+/*** MEDIA-QUERYS ***/
+
+@media (min-width: 480px) { /*** TABLET ***/
+    h2{
+        font-size:2em
+    }
+    /*** RECAUDACION ***/
+    #video-youtube-incrustado{
+        height: 13em;
+    }
+    #Recaudacion p {
+        font-size: 1.4em;
+    }
+    /*** BENEFICIARIO ***/
+    #Beneficiario{
+        font-size: 1.2em
+    }
+    /*** PAGOS ***/
+    form{
+        font-size: 1.2em;
+    }
+    /*** TRANSFORMAMOS ***/
+    #Transformamos p{
+        font-size: 1.4em;
+    }
+    /*** VIAJE DE IDA ***/
+    #ViajeIda h2 {
+        font-size: 1.9em;
+    }
+    #ViajeIda h3 {
+        font-size: 1.3em;
+    }
+    /*** NELSON ***/
+    #Nelson{
+        font-size: 1.3em;
+    }
+}
+
+@media (min-width: 768px) {/*** SMALL SCREENS - LAPTOPS ***/
+    /*** RECAUDACION ***/
+    #Recaudacion{
+        font-size: 1.3em;
+    }
+    /*** BENEFICIARIO ***/
+    #Beneficiario{
+        font-size: 1.3em;
+    }
+    /*** CONTRIBUYE ***/
+    #Contribuye{
+        font-size: 1.3em;
+    }
+    /*** PAGOS ***/
+    #Pagos{
+        font-size: 1.2em;
+    }
+    input{
+        font-size: 0.7em;
+    }
+    /*** TRANSFORMAMOS ***/
+    #Transformamos p {
+        font-size: 1.7em;
+    }
+    /*** VIAJE DE IDA ***/
+    #ViajeIda{
+        font-size: 1.3em;
+    }
+    /*** NELSON ***/
+    #Nelson{
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 900px) { 
+    h2 {
+        font-size: 2.2em;
+    }
+    /*** RECAUDACION ***/
+    #Recaudacion{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        font-size: 1.1em;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #video-youtube-incrustado{
+        margin: 0;
+        height: 9em;
+        font-size: 1.2em;
+        width: 17em;
+    }
+    /*** BENEFICIARIO ***/
+    #box-1{
+        font-size: 1.2em;
+        width: 100%;
+    }
+    /*** TRNASFORMAMOS ***/
+    #Transformamos h2{
+        font-size: 2.5em;
+        width: 50%;
+    }
+    #Transformamos p {
+        font-size: 1.9em;
+        width: 95%;
+    }
+    #Transformamos img{
+        width: 44em;
+        height: 37em;
+    }
+    /*** VIAJE DE IDA ***/
+    #ViajeIda h3 {
+        font-size: 1.4em;
+    }
+}
+
+@media (min-width: 1000px) { /*** DESKTOPS ***/
+    #Recaudacion{
+        font-size: 1.2em;
+        justify-content: space-evenly;
+    }
+    /*** CONTRIBUYE ***/
+    #Contribuye{
+        font-size: 1.3em;
+        width: 75%;
+    }
+    /*** TRANSFORMAMOS ***/
+    #Transformamos h2{
+        width: 75%;
+    }
+    #Transformamos p {
+        font-size: 2em;
+        width: 85%;
+    }
+    /*** NELSON ***/
+    #Nelson h3{
+        font-size: 1.5em;
+        width: 80%;
+    }
+    /*** FORM ***/
+
+    #flex-form {
+        display: flex;
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    #flex-desktop{
+        display: flex;
+        width: 52%;        
+        flex-direction: column;
+        margin: 0.5em 0.7em 0 0;
+    }
+    #fieldset-radio{
+        justify-content: space-evenly;
+    }
+    form img{
+        width: 17em;
+        height: 11em;
+    }
+    input{
+        width: 98%;
+    }
+
+}
