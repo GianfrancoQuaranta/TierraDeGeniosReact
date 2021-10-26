@@ -36,8 +36,7 @@ function Home(){
                     </article>
                     <h3>Gianfranco Enzo Quaranta</h3>
                     <p>25 años - Cordoba, Cordoba</p>
-                    <p>Perfil:</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                    <p>Creo que la eduacación es el camino a una vida mejor, y que hoy las oportunidades se encuentran en el rubro de la tecnologia, quiero ser desarrollador web Full-Stack y cambiar mi vida, por favor, si esta dentro de tus posibilidades, ayudame a lograrlo!</p>
                 </article>
             </section>
             <section id="Contribuye">
@@ -94,9 +93,11 @@ function Home(){
             </section>
             <section id="ViajeIda">
                 <h2 className="blue">Un viaje de Ida</h2>
-                <figure>
-                    <img src={Viaje} alt="Graduated" id="viajeIMG"/>
-                </figure>
+                {/* <article className="mobile-visible-home"> */}
+                    <figure>
+                        <img src={Viaje} alt="Graduated" id="viajeIMG"/>
+                    </figure>
+                {/* </article> */}
                 <h3 className="red">En 7 meses nuestros becados viven su nueva vida</h3>
             </section>
             <section id="Nelson">

@@ -4,7 +4,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: rgb(243, 245, 243);
     font-family: "Roboto";
     min-height: 20vh;
@@ -16,6 +16,26 @@ footer nav{
     align-items: center;
     justify-content: space-evenly;
     box-shadow: none;
+}
+
+
+footer #Logo{
+    margin: 0;
+}
+
+#facebook{
+    font-size: 2em;
+    color: #20405d;
+}
+
+#whatsapp{
+    font-size: 2em;
+    color: rgb(121, 121, 121)
+}
+
+#instagram{
+    font-size: 2em;
+    color: #DC2D2D;
 }
 
 

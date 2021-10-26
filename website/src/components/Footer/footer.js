@@ -12,9 +12,9 @@ function Footer(){
         <footer>
             <img src={Logo} id="Logo" alt="Logo"/>
             <nav>
-                {/* <FontAwesomeIcon icon="facebook-square" />
-                <FontAwesomeIcon icon="whatsapp-square" />
-                <FontAwesomeIcon icon="instagram-square" /> */}
+                <FontAwesomeIcon icon={["fab","facebook-square"]} id="facebook" />
+                <FontAwesomeIcon icon={["fab","whatsapp-square"]} id="whatsapp" />
+                <FontAwesomeIcon icon={["fab","instagram-square"]} id="instagram" />
             </nav>
         </footer>
     )
