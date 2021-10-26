@@ -16,8 +16,9 @@ footer nav{
     align-items: center;
     justify-content: space-evenly;
     box-shadow: none;
+    background-color: rgb(243, 245, 243);
+    margin: 0 0 1em 0;
 }
-
 
 footer #Logo{
     margin: 0;
@@ -26,16 +27,37 @@ footer #Logo{
 #facebook{
     font-size: 2em;
     color: #20405d;
+    transition: 0.8s;
 }
 
 #whatsapp{
     font-size: 2em;
-    color: rgb(121, 121, 121)
+    color: rgb(121, 121, 121);
+    transition: 0.8s;
 }
 
 #instagram{
     font-size: 2em;
     color: #DC2D2D;
+    transition: 0.8s;
+}
+
+#facebook:hover{
+    color: #DC2D2D;
+}
+
+#whatsapp:hover{
+    color: #25D366;
+}
+
+#instagram:hover{
+    color: #20405d;
+}
+
+@media (min-width: 1000px){
+    footer nav{
+        width: 30%;
+    }
 }
 
 
