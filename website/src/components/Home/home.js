@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom"
 import "./home.css"
 
 /*** IMAGES ***/
@@ -30,9 +31,11 @@ function Home(){
                 <h2 className="red">Beneficiario</h2>
                 <article id="box-1">
                     <article id="box-2">
+                    <Link to="/123">
                         <figure>
                             <img src={Beneficiario} alt="beneficiario" />
                         </figure>
+                    </Link>
                     </article>
                     <h3>Gianfranco Enzo Quaranta</h3>
                     <p>25 años - Cordoba, Cordoba</p>
@@ -62,9 +65,9 @@ function Home(){
                                     <label htmlFor="monto">Monto a contribuir</label>
                                     <input type="number" htmlFor="monto" placeholder="EJ: $20.000"></input>
                                     <fieldset id="fieldset-radio">
-                                        <input type="radio" htmlFor="monto"className="radio"></input>
+                                        <input type="radio" htmlFor="monto"className="radio" name="radio"></input>
                                         <label>Mensual</label>
-                                        <input type="radio" htmlFor="monto" className="radio"></input>
+                                        <input type="radio" htmlFor="monto" className="radio" name="radio"></input>
                                         <label>Única vez</label>
                                     </fieldset>
                                 </fieldset>
@@ -93,11 +96,14 @@ function Home(){
             </section>
             <section id="ViajeIda">
                 <h2 className="blue">Un viaje de Ida</h2>
-                {/* <article className="mobile-visible-home"> */}
-                    <figure>
+                {/* <article id="mobile-visible-home"> */}
+                    {/* <figure>
                         <img src={Viaje} alt="Graduated" id="viajeIMG"/>
-                    </figure>
+                    </figure> */}
                 {/* </article> */}
+                <article id="desktop-visible-home">
+                    <script type="module" src="../Scripts/Carrousel-swiper/swiper.js"></script>
+                </article>
                 <h3 className="red">En 7 meses nuestros becados viven su nueva vida</h3>
             </section>
             <section id="Nelson">

@@ -11,15 +11,15 @@ function Header(){
     return(
         <header>
             <nav>
-                <img src={Logo} id="Logo" alt="Logo"/>
+                    <Link to="/">
+                        <img src={Logo} id="Logo" alt="Logo"/>
+                    </Link>
                 <FontAwesomeIcon icon="bars" id="burguer" className="mobile-visible"/>
                 <ul className="desktop-visible">
-                <BrowserRouter>
-                    <Link to="/"><li>Solicitar beca</li></Link>
+                    <Link to="/solicitar-beca"><li>Solicitar beca</li></Link>
                     <Link to="/"><li>Nosotros</li></Link>
-                    <Link to="/"><li>Registrarse</li></Link>
-                    <Link to="/"><li>Ingresar</li></Link>
-                </BrowserRouter>
+                    <Link to="/registrarse"><li>Registrarse</li></Link>
+                    <Link to="/ingresar"><li>Ingresar</li></Link>
                 </ul>
             </nav>
         </header>

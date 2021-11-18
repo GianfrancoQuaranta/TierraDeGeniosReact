@@ -1,0 +1,22 @@
+Que tiene que tener tierra de Genios?
+
+- Home 
+
+- Vista solicitante a becas (Para los datos que van en el formulario (docs)) (Buscar en el canal de slack applicants)
+
+- Detalle de Applicant
+
+- Vista Donor (Muy similar a la 2.0, un formulario de registro)
+
+- Vista de empresa (a definir)
+
+- Vista Login
+
+- Vista About Us
+
+- Dashboard Donante
+
+- Dashboard Empresa
+
+
+

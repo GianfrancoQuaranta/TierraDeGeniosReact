@@ -12,11 +12,11 @@ main{
     font-family: "Roboto";
 }
 
-.mobile-visible-home{
+#mobile-visible-home{
     display: inline-block;
 }
 
-.desktop-visible-home{
+#desktop-visible-home{
     display: none;
 } 
 
@@ -113,6 +113,10 @@ h2{
     width: 100%;
 }
 
+#Beneficiario h2{
+    margin: 0 0 1em 0;
+}
+
 #Beneficiario h3{
     text-align: center;
     margin: 0 0 0.5em 0;
@@ -120,6 +124,7 @@ h2{
 
 #Beneficiario p{
     margin: 0.3em 0;
+    text-align: -webkit-center;
 }
 
 #Beneficiario figure{
@@ -241,11 +246,18 @@ fieldset{
     text-align: center;
 }
 
+#Transformamos h2{
+    margin: 0 0 1em 0;
+}
+
 #Transformamos figure{
     width: 100%;
     height: 100%;
 }
 
+#Transformamos p {
+    margin: 1em 0 0 0;
+}
 
 #Transformamos img{
     width: 100%;
@@ -279,6 +291,7 @@ fieldset{
 
 #Nelson h3{
     text-align: center;
+    margin: 0 0 0.5em 0;
 }
 
 #Nelson p{
@@ -338,8 +351,11 @@ fieldset{
 }
 
 @media (min-width: 768px) {/*** SMALL SCREENS - LAPTOPS ***/
-    .mobile-visible-home{
+    #mobile-visible-home{
         display: none;
+    }
+    #desktop-visible-home{
+        display: inline-block;
     }
     /*** RECAUDACION ***/
     #Recaudacion{

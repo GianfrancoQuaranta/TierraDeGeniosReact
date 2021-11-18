@@ -26,7 +26,7 @@ footer #Logo{
 
 #facebook{
     font-size: 2em;
-    color: #20405d;
+    color: rgb(121, 121, 121);
     transition: 0.8s;
 }
 
@@ -38,12 +38,12 @@ footer #Logo{
 
 #instagram{
     font-size: 2em;
-    color: #DC2D2D;
+    color: rgb(121, 121, 121);
     transition: 0.8s;
 }
 
 #facebook:hover{
-    color: #DC2D2D;
+    color: #20405d;
 }
 
 #whatsapp:hover{
@@ -51,7 +51,7 @@ footer #Logo{
 }
 
 #instagram:hover{
-    color: #20405d;
+    color: #DC2D2D;
 }
 
 @media (min-width: 1000px){
