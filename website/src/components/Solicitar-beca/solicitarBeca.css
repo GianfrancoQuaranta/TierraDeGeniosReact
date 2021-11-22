@@ -54,9 +54,10 @@
 }
 
 .textos-p {
-    margin: 10px 0;
+    margin: 10px 0 0 0;
     font-size: 16px;
-    text-align: left;
+    text-align: center;
+    padding: 0 1em 0 1em;
     width: 100%;
 }
 
@@ -83,9 +84,13 @@
 /*----------------------------------------------Segundo Section----------------------------------------------------*/
 
 .h2-2do-section {
-    width: 90%;
     text-align: center;
-    margin-top: 10px;
+    margin: 1em 0 1em 0;
+    padding: 0 0.5em 0 0.5em;
+}
+
+#solicitar-main section{
+    padding: 0;
 }
 
 #solicitar-main section form {
@@ -94,6 +99,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 1em;
 }
 
 /* #solicitar-main section form fieldset {
@@ -119,9 +125,9 @@
     flex-wrap: wrap;
 }
     
-#solicitar-main section form fieldset label input {
-    width: 20%;
+#solicitar-main input {
     margin: 5px 0;
+    padding: 8px;
     display: flex;
     justify-content: start;
     align-items: start;
@@ -167,9 +173,6 @@
     width: 100%;
 }
 
-.p-formacion-academica-actual {
-    width: 100%;
-}
 
 .input-formacion-academica-actual {
     width: 100%;
@@ -251,10 +254,6 @@
     padding: 1em;
 }
 
-.h2-2do-section {
-    border-bottom: 1px solid #DC2D2D;
-    width: 62%;
-}
 
 
 
@@ -264,7 +263,7 @@
 
 @media(min-width:500px){
 
-    .solicitar-article figure {
+.solicitar-article figure {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -281,10 +280,6 @@
     width: 55%;
 }
 
-.h2-2do-section {
-    width: 45%;
-    max-width: 200px;
-}
 
 }
 
@@ -315,14 +310,6 @@
     max-width: 65%;
 }
 
-.h2-2do-section {
-    max-width: 185px;
-    border-bottom: 1px solid #DC2D2D;
-}
-
-.p-form-desktop {
-    max-width: 844px;
-}
 
 #solicitar-main section form {
     max-width: 844px;

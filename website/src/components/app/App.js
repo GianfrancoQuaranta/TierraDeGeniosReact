@@ -8,9 +8,9 @@ import React from "react"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faFacebookSquare, faGoogle, faInstagramSquare, faWhatsappSquare} from '@fortawesome/free-brands-svg-icons'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { fas, faBars, faIdCard, faGlobeAmericas, faCalendarAlt} from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab,faBars,faFacebookSquare, faInstagramSquare, faWhatsappSquare, faGoogle)
+library.add(fas, fab, faBars, faFacebookSquare, faInstagramSquare, faWhatsappSquare, faGoogle, faIdCard, faGlobeAmericas, faCalendarAlt)
 
 
 function App() {
@@ -18,7 +18,6 @@ function App() {
     <React.Fragment>
       <Header />
       <Switch />
-      <SwiperApp />
       <Footer />
     </React.Fragment>
   );  

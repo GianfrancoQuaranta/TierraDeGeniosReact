@@ -31,7 +31,7 @@ function Home(){
                 <h2 className="red">Beneficiario</h2>
                 <article id="box-1">
                     <article id="box-2">
-                    <Link to="/123">
+                    <Link to="/detalle-aplicante">
                         <figure>
                             <img src={Beneficiario} alt="beneficiario" />
                         </figure>
@@ -102,6 +102,7 @@ function Home(){
                     </figure> */}
                 {/* </article> */}
                 <article id="desktop-visible-home">
+                    <div id="app"></div>
                     <script type="module" src="../Scripts/Carrousel-swiper/swiper.js"></script>
                 </article>
                 <h3 className="red">En 7 meses nuestros becados viven su nueva vida</h3>

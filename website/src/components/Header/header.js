@@ -17,7 +17,7 @@ function Header(){
                 <FontAwesomeIcon icon="bars" id="burguer" className="mobile-visible"/>
                 <ul className="desktop-visible">
                     <Link to="/solicitar-beca"><li>Solicitar beca</li></Link>
-                    <Link to="/"><li>Nosotros</li></Link>
+                    <Link to="/sobre-nosotros"><li>Nosotros</li></Link>
                     <Link to="/registrarse"><li>Registrarse</li></Link>
                     <Link to="/ingresar"><li>Ingresar</li></Link>
                 </ul>

@@ -109,13 +109,10 @@ function solicitarBecas(){
                         <p>No</p>
                     </fieldset>
                 </fieldset>
-                    <fieldset class="fieldset-formacion-academica-actual">
-                    <label for="formacion-academica-actual" class="label-formacion-academica-actual"></label>
-                    <legend class="legend-formacion-academica-actual">¿Qué formación académica posees hoy?</legend>
+                    <legend>¿Qué formación académica posees hoy?</legend>
                     <p class="p-formacion-academica-actual p-label-leyenda-small"><small>En caso de no poseer, especificar.</small></p>
                     <input type="text" name="formacion-academica-actual" id="formacion-academica-actual" value="" placeholder="" 
                     class="input-formacion-academica-actual" required></input>
-                </fieldset>
                     <label for="que-quiere-estudiar" class=""></label>
                     <legend>¿Qué formación académica tecnológica te gustaría realizar?</legend>
                     <p class="p-label-leyenda-small"><small>Ejemplo: Desarrolo Web Full Stack, Data Science, etc.</small></p>
