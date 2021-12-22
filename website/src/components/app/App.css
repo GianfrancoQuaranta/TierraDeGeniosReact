@@ -1,3 +1,17 @@
+:root{ 
+  --gradient:  linear-gradient(90deg, #DC2D2D 0.14%, #04398C 100%);
+  --border-radius: 32px;
+  --shadow: 2px 4px 23px 4px rgba(0, 0, 0, 0.25);
+}
+
+.flex-column{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .App {
   text-align: center;
 }

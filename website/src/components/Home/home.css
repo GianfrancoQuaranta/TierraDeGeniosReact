@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 main{
     display: flex;
@@ -12,15 +13,30 @@ main{
     font-family: "Roboto";
 }
 
+#titulo-centro{
+    position: absolute;
+    width: 75%;
+    top: 4em;
+    background: -webkit-linear-gradient(90deg, #DC2D2D 0.14%, #04398C 100%);
+    background-clip: text;
+    font-weight: 900;
+    text-shadow: 5px 5px 0 #fff;
+    -webkit-text-fill-color: transparent;
+    /* text-shadow: 0px 0 #fff, 0 0px #fff, 0px 0 #fff, 0 0px #fff; */
+    text-align: center;
+    font-size: 30px;
+    z-index: 1;
+}
+
 #mobile-visible-home{
     display: inline-block;
 }
 
-#desktop-visible-home{
-    display: none;
+.desktop-visible-home{
+    display: none !important;
 } 
 
-section{
+.section-home{
     padding:  0.5em 1.5em;
     margin: 2.5em 0 2.5em 0;
 }
@@ -36,35 +52,66 @@ section{
 }
 
 button{
+    margin: 1em 0;
     padding: 0.5em 2em;
     background-color: #DC2D2D;
-    border-radius: 12px;
+    border-radius: 10px;
     border: none;
     color: white;
+    cursor: pointer;
     font-size: 1em;
 }
 
+#button-header{
+    position: relative;
+    top: -85px;
+    left: 3px;
+    font-size: 20px;
+    margin: 0;
+}
+
+
 /***** RECAUDACION *****/
 
-#video-youtube-incrustado{
+.video-youtube-incrustado{
+    width: 17em;
     border-radius: 12px;
     margin: 0 0 2em 0;
     height: 100%;
+    border: 2px solid #fff;
 }
 
 #Recaudacion{
     margin: 5.5em 0 2.5em 0;
+    width: 100%;
+    background-image: var(--gradient);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    box-shadow: var(--shadow);
+}
+
+#Recaudacion h2{
+    color: #fff;
+    margin: 1em 0;
+}
+
+#recaudacion-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #Recaudacion p{
     font-size: 1.2em;
-    color: rgb(85, 84, 84);
+    margin: 0.5em 0 0.5em 0;
+    color: #fff;
 }
 
 h2{
-    font-weight: 450;
+    font-size: 30px;
+    margin: 0 0 1em 0;
+    font-weight: 300;
     text-align: center;
     color: #DC2D2D;
 }
@@ -87,198 +134,66 @@ h2{
     overflow: hidden;
 }
 
-/***** Beneficiario *****/
+/***** Fundacion *****/
 
-#Beneficiario{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#Fundacion a{
+    display: contents;
 }
 
-#box-1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2em;
-    border-radius: 10px;
-    border: rgb(165, 165, 165);
-    box-shadow: 0px 0px 12px -4px rgb(0 0 0 / 48%);
-}
-
-#box-2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#Fundacion{
     width: 100%;
 }
 
-#Beneficiario h2{
-    margin: 0 0 1em 0;
+#Fundacion img{
+    max-width: 35%;
+    height: auto;
 }
 
-#Beneficiario h3{
+#Fundacion figure{
+    width: 100%;
+}
+
+#Fundacion p{
     text-align: center;
-    margin: 0.5em 0 0.5em 0;
+    margin: 1em 0 0;
+    font-size: 20px;
 }
 
-#Beneficiario p{
-    margin: 0.3em 0;
-    text-align: -webkit-center;
-}
-
-#Beneficiario figure{
-    width: 8.8em;
-    height: 8.8em;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-#Beneficiario img{
-    width: 9.5em;
-    height: 19em;
-    overflow: hidden;
-    object-fit: cover;
-}
-
-.flex-button{
+#fundacion-flex-imagenes{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-/***** Pagos *****/
-
-#Pagos article{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2em 0;
-    padding: 1em;
-    border-radius: 10px;
-    border: rgb(168, 167, 167);
-    box-shadow: 0px 0px 12px -4px rgb(0 0 0 / 48%);
-    /* box-shadow: 0px 0px 67px -27px rgba(0,0,0,0.67); */
+#border{
+    width: 70%;
+    height: 2px;
+    background: var(--gradient);
 }
 
-/* #Pagos article::after{
+/***** Beca *****/
+
+#Beca img{
+    width: 100%;
+}
+
+#Beca h2{
+    font-weight: 600;
+}
+
+/* #imagen-izquierda{
+    max-width: 30%;
+    height: auto;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    content: " ";
-    background: linear-gradient(to bottom, #d3d1d1, #d3d1d1);
-    width: 100%;
-    height: 97%;
-    filter: blur(10px);
-    z-index: -1;
+}
+
+#imagen-derecha{
+    max-width: 30%;
+    height: auto;
+    position: absolute;
+    left: -1em;
+    top: 140em;
 } */
-
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#flex-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-form p{
-    text-align: center;
-}
-
-form figure{
-    width: 11em;
-    height: 100%;
-}
-
-form img{
-    width: 100%;
-    height: 100%;
-}
-
-label{
-    text-align: center;
-    margin: 0.5em 0;
-}
-
-input{
-    width: 100%;
-    margin: 0.5em 0;
-    border: none;
-    background: rgb(231, 231, 231);
-    border-radius: 6px;
-    padding: 0.5em 0.3em;
-}
-
-input:focus{
-    outline: none;
-}
-
-.radio {
-    width: 15%;
-}
-
-#fieldset-radio{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0.5em 0 0;
-}
-
-fieldset{
-    border: none;
-    width: 100%;
-    padding: 0;
-    margin: 0.5em 0;
-}
-
-
-/***** Transformamos *****/
-
-#Transformamos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-#Transformamos h2{
-    margin: 0 0 1em 0;
-}
-
-#Transformamos figure{
-    width: 100%;
-    height: 100%;
-}
-
-#Transformamos p {
-    margin: 1em 0 0 0;
-}
-
-#Transformamos img{
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    object-fit: cover;
-}
-
-/***** Viaje de Ida *****/
-
-#viajeIMG{
-    width: 100%;
-}
-
-#ViajeIda h2{
-    font-size: 1.7em;
-}
-
-#ViajeIda h3{
-    text-align: center;
-}
 
 /***** Nelson *****/
 
@@ -292,10 +207,11 @@ fieldset{
 #Nelson h3{
     text-align: center;
     margin: 0 0 0.5em 0;
+    font-family: 'Baloo 2', cursive;;
 }
 
 #Nelson p{
-    margin: 0 0 0.3em 0;
+    margin: 1em 0 0.3em 0;
 }
 
 #Nelson figure{
@@ -314,40 +230,51 @@ fieldset{
 
 /*** MEDIA-QUERYS ***/
 
+@media (min-width: 400px){
+    #titulo-centro {
+        font-size: 36px;
+        top: 3em;
+        width: 71%;
+    }
+}
+
 @media (min-width: 480px) { /*** TABLET ***/
+    #titulo-centro {
+        font-size: 40px;
+        top: 2em;
+        width: 77%;
+    }
     h2{
         font-size:2em
     }
-    /*** RECAUDACION ***/
-    #video-youtube-incrustado{
-        height: 13em;
+    #Fundacion p{
+        padding: 0 3em;
     }
     #Recaudacion p {
         font-size: 1.4em;
-    }
-    /*** BENEFICIARIO ***/
-    #Beneficiario{
-        font-size: 1.2em
-    }
-    /*** PAGOS ***/
-    form{
-        font-size: 1.2em;
-    }
-    /*** TRANSFORMAMOS ***/
-    #Transformamos p{
-        font-size: 1.4em;
-    }
-    /*** VIAJE DE IDA ***/
-    #ViajeIda h2 {
-        font-size: 1.9em;
-    }
-    #ViajeIda h3 {
-        font-size: 1.3em;
     }
     /*** NELSON ***/
     #Nelson{
         font-size: 1.3em;
     }
+}
+
+@media (min-width: 530px) {
+    #titulo-centro {
+        font-size: 40px;
+        top: 2em;
+        width: 57%;
+    }
+}
+
+@media (min-width: 650px) {
+    #mobile-visible-home{
+        display: none;
+    }
+    
+    .desktop-visible-home{
+        display: inline-block !important;
+    } 
 }
 
 @media (min-width: 768px) {/*** SMALL SCREENS - LAPTOPS ***/
@@ -357,31 +284,15 @@ fieldset{
     #desktop-visible-home{
         display: inline-block;
     }
+    /*** Fundacion ***/
+    #Fundacion{
+        margin: 4em 0;
+    }
+    #Fundacion p{
+        font-size: 25px;
+    }
     /*** RECAUDACION ***/
     #Recaudacion{
-        font-size: 1.3em;
-    }
-    /*** BENEFICIARIO ***/
-    #Beneficiario{
-        font-size: 1.3em;
-    }
-    /*** CONTRIBUYE ***/
-    #Contribuye{
-        font-size: 1.3em;
-    }
-    /*** PAGOS ***/
-    #Pagos{
-        font-size: 1.2em;
-    }
-    input{
-        font-size: 0.7em;
-    }
-    /*** TRANSFORMAMOS ***/
-    #Transformamos p {
-        font-size: 1.7em;
-    }
-    /*** VIAJE DE IDA ***/
-    #ViajeIda{
         font-size: 1.3em;
     }
     /*** NELSON ***/
@@ -397,35 +308,18 @@ fieldset{
     /*** RECAUDACION ***/
     #Recaudacion{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
         height: 100%;
         font-size: 1.1em;
         justify-content: space-between;
         align-items: center;
     }
-    #video-youtube-incrustado{
+    .video-youtube-incrustado{
         margin: 0;
         height: 9em;
         font-size: 1.2em;
         width: 17em;
-    }
-    /*** BENEFICIARIO ***/
-    #box-1{
-        font-size: 1.2em;
-    }
-    /*** TRNASFORMAMOS ***/
-    #Transformamos h2{
-        font-size: 2.5em;
-        width: 50%;
-    }
-    #Transformamos p {
-        font-size: 1.9em;
-        width: 95%;
-    }
-    #Transformamos img{
-        width: 44em;
-        height: 37em;
     }
     /*** VIAJE DE IDA ***/
     #ViajeIda h3 {
@@ -434,53 +328,45 @@ fieldset{
 }
 
 @media (min-width: 1000px) { /*** DESKTOPS ***/
-    #Recaudacion{
-        font-size: 1.2em;
-        justify-content: space-evenly;
-    }
-    #box-1 {
+    #titulo-centro {
+        font-size: 65px;
+        top: 1.3em;
         width: 70%;
     }
-    /*** CONTRIBUYE ***/
-    #Contribuye{
-        font-size: 1.3em;
-        width: 75%;
+
+    #button-header{
+        top: -110px;
+        left: 3px;
+        font-size: 24px;
     }
-    /*** TRANSFORMAMOS ***/
-    #Transformamos h2{
-        width: 75%;
+    
+    .section-home {
+        margin: 5em 0 5em 0;
     }
-    #Transformamos p {
-        font-size: 2em;
-        width: 85%;
-    }
-    /*** NELSON ***/
-    #Nelson h3{
-        font-size: 1.5em;
-        width: 80%;
-    }
-    /*** FORM ***/
-    #flex-form {
-        display: flex;
-        width: 100%;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-    }
-    #flex-desktop{
-        display: flex;
-        width: 52%;        
-        flex-direction: column;
-        margin: 0.5em 0.7em 0 0;
-    }
-    #fieldset-radio{
+    /** RECAUDACION **/
+    #Recaudacion{
+        font-size: 1.4em;
         justify-content: space-evenly;
     }
-    form img{
-        width: 17em;
-        height: 11em;
+    #Recaudacion h2 {
+        font-size: 2.2em;
     }
-    input{
-        width: 98%;
+    #Recaudacion p {
+        margin: 1em 0 0 0;
+        font-size: 1.7em;
+    }
+    #Fundacion p{
+        font-size: 40px;
+    }
+    #Beca h2{
+        font-weight: 600;
+        font-size: 2.8em;
+    }
+    
+    /*** NELSON ***/
+    #Nelson h3{
+        font-size: 2em;
+        width: 80%;
     }
 
 }

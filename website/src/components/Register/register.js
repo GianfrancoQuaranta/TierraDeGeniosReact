@@ -7,20 +7,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Register (){
     return(
-        <main id="register-main">
-        <section class="section-registro">
-        <h1 class="titular-uno"><strong>¡Bienvenidos!</strong></h1>
+        <main id="main-register">
+        <section id="section-registro">
+        {/* <h1 class="titular-uno"><strong>¡Bienvenidos!</strong></h1>
             <article class="registro-uno">
             <p class="registrarme"><strong>Registrarme con:</strong></p>
-            <FontAwesomeIcon icon={["fab","facebook-square"]} id="facebook" />
-            <FontAwesomeIcon icon={["fab","fa-google"]} id="google" />
-            </article>
-            <section class="registro-dos">
-                <form class="form-registro" action="/user/register" method="POST" enctype="multipart/form-data">
-                    <h3 class="titular-dos"><strong>Formulario de registro</strong></h3>
+                <article id="flex-marcas">
+                    <FontAwesomeIcon icon={["fab","facebook-square"]} id="facebook" />
+                    <FontAwesomeIcon icon={["fab","google"]} id="google" />
+                </article>
+            </article> */}
+            <section id="registro-dos">
+                <form id="form-registro" action="/user/register" method="POST" enctype="multipart/form-data" className='button-with-gradient-border'>
+                    <p id="registrarse-titulo">Formulario de registro</p>
                     <fieldset>
-                        <label>Nombre:</label>
-                        <input type="text" name="firstName" id="firstName" placeholder="Nombre" class= "usuarioNombre" value="" />
+                        {/* <label>Nombre:</label> */}
+                        <input type="text" name="firstName" placeholder="Nombre"  />
                         <p class="mensajeFirstName"> </p>
                         {/* <% if (locals.errors && errors.firstName) { %>
                             <p id= "text-danger">
@@ -28,16 +30,16 @@ function Register (){
                             </p>
                         <% } %> */}
                         
-                        <label>Apellido:</label>
-                        <input type="text" name="lastName" id="lastName" placeholder="Apellido" class= "usuarioNombre"  value="" />
+                        {/* <label>Apellido:</label> */}
+                        <input type="text" name="lastName" placeholder="Apellido"  />
                         <p class="mensajeLastName"> </p>
                         {/* <% if (locals.errors && errors.lastName) { %>
                             <p id= "text-danger">
                                 <%= errors.lastName.msg %> 
                             </p>
                         <% } %> */}
-                        <label for="avatar">Seleccionar imagen de perfil</label>
-                        <input type="file" name="avatar" id="avatar" class= "usuarioNombre" />
+                        {/* <label for="avatar">Seleccionar imagen de perfil</label> */}
+                        <input type="file" name="avatar" />
                         <p class="mensajeAvatar"> </p>
                         {/* <% if (locals.errors && !errors.avatar) { %>
                             <p id="text-danger">
@@ -49,8 +51,8 @@ function Register (){
                                 <%= errors.avatar.msg %> 
                             </p>
                         <% } %> */}
-                        <label>Email:</label>
-                        <input type="email" name="email" id="email" placeholder= "Email" class="usuarioNombre" />
+                        {/* <label>Email:</label> */}
+                        <input type="email" name="email" placeholder= "Email" />
                         <p class="mensajeEmail"> </p>
                         {/* <% if (locals.errors && errors.email) { %>
                             <p id="text-danger">
@@ -58,9 +60,8 @@ function Register (){
                             </p>
                         <% } %>
                         */}
-                        <label>Fecha de Nacimiento:</label>
-                        <input class="fecha-nac" type="date" name="birthDate" value="" min="1930-01-01" max="2019-12-30" />
-                        <p class="mensajeBirthDate"> </p>
+                        {/* <label>Fecha de Nacimiento:</label> */}
+                        <input id="fecha-nac" type="date" name="birthDate"  min="1930-01-01" max="2019-12-30" />
                         {/* <% if (locals.errors && !errors.birdthDate) { %>
                             <p id="text-danger">
                                 Debes seleccionar tu fecha de nacimiento nuevamente
@@ -72,16 +73,16 @@ function Register (){
                             </p>
                         <% } %> */}
                         
-                        <label>Domicilio:</label>
-                        <input type="text" name="adress" id="adress" placeholder="Dirección" class="usuarioNombre"  value="" />
+                        {/* <label>Domicilio:</label> */}
+                        <input type="text" name="adress" placeholder="Dirección"   />
                         <p class="mensajeAdress"> </p>
                         {/* <% if (locals.errors && errors.adress) { %>
                             <p id= "text-danger">
                                 <%= errors.adress.msg %> 
                             </p>
                         <% } %> */}
-                        <label>Número de contacto:</label>
-                        <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Telefono" class= "usuarioNombre"  value="" />
+                        {/* <label>Número de contacto:</label> */}
+                        <input type="tel" name="phoneNumber" placeholder="Telefono"   />
                         <p class="mensajePhoneNumber"> </p>
                         {/* <% if (locals.errors && errors.phoneNumber) { %>
                             <p id= "text-danger">
@@ -89,8 +90,8 @@ function Register (){
                             </p>
                         <% } %> */}
                         
-                        <label>País:</label>
-                        <input type="text" name="country" id="country" placeholder="Pais" class="usuarioNombre" value="" />
+                        {/* <label>País:</label> */}
+                        <input type="text" name="country" placeholder="Pais"   />
                         <p class="mensajeCountry"> </p>
                         {/* <% if (locals.errors && errors.country) { %>
                             <p id= "text-danger">
@@ -98,42 +99,25 @@ function Register (){
                             </p>
                         <% } %> */}
                         
-                        <label>Contraseña:</label>
-                        <input type="password" name="password" id="password" placeholder="Contraseña" class="usuarioNombre" />
+                        {/* <label>Contraseña:</label> */}
+                        <input type="password" name="password" placeholder="Contraseña"  />
                         <p class="mensajePassword"> </p>
                         {/* <% if (locals.errors && errors.password) { %>
                             <p id= "text-danger">
                                 <%= errors.password.msg %> 
                             </p>
                         <% } %> */}
-                        <label>Confirmar contraseña:</label>
-                        <input type="password" name="passwordConfirm" id="passwordConfirm" placeholder="Confirmar contraseña" class="usuarioNombre" />
+                        {/* <label>Confirmar contraseña:</label> */}
+                        <input type="password" name="passwordConfirm" placeholder="Confirmar contraseña"  />
                         <p class="mensajePasswordConfirm"> </p>
                         {/* <% if (locals.errors && errors.passwordConfirm) { %>
                             <p id= "text-danger">
                                 <%= errors.passwordConfirm.msg %> 
                             </p>
                         <% } %> */}
-                        <fieldset class="opciones-pago">
-                            <h3 class="opciones">Seleccionar opciones de contribución</h3>
-                            <p class="mensajeMediosDePago"> </p>
-                            {/* <% if (locals.errors && errors.medio_de_pago) { %>
-                                
-                                <p id= "text-danger">
-                                    <%= errors.medio_de_pago.msg %> 
-                                </p>
-                            <% } %> */}
-                            {/* <% for( let i = 0; i < mediosDePago.length; i++ ) { %>
-                                
-                                <label for="">
-                                <input class="forma-pago" type="checkbox" name="medio_de_pago" value= "<%= mediosDePago[i].id %>"> <%= mediosDePago[i].medio_de_pago %>
-                                
-                                </label>
-                            
-                            <% } %> */}
-                        </fieldset>
                     </fieldset>
-                <a href="/" /><input class="button-dos" type="submit" value="Registrarme" />  
+                        <a href="/" id="buttonIngresar"></a>
+                        <input id="button-login" type="submit" value="Registrarse" /> 
                 </form>
             </section>
         </section>

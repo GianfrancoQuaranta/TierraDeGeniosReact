@@ -1,0 +1,16 @@
+#scrolltop {
+    position: fixed;
+    padding: 0.5em 1em;
+    right: 15px;
+    bottom: 6em;
+    height: 3em;
+    max-width: 28%;
+    border-radius: 8px;
+    background-color: #DC2D2D;
+    color: white;
+    z-index: 99;
+}
+
+#scrolltop svg{
+    font-size: 1.3em;
+}

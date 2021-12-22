@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 header{
     /* min-height: 100%; */
     max-height: 68px;
     min-width: 100%;
-    font-family: "Roboto";
+    font-family: 'Manrope', sans-serif;
     position: fixed;
     z-index: 3;
 }
@@ -18,65 +18,199 @@ header{
 }
 
 nav{
-    max-height: 68px;
+    height: 70px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 35%);
+    border-bottom: 2px solid transparent;
+    border-image: var(--gradient);
+    border-image-slice: 1;
+    box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 35%);
     background-color: white;
+}
+
+#nav-izq{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nav-der{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 nav article{
     display: flex;
-    width: 60%;
+    width: 100%;
     justify-content: space-evenly;
+    align-items: center;
 }
 
-
-#Logo {
+.Logo {
     width: 6.5em;
-    height: 4em;
-    margin: 0 0 0 0.5em;
+    height: 3.5em;
+    margin: 0 0 0 1em;
+    object-fit: contain;
+}
+
+.Logo-menu {
+    width: 6.5em;
+    height: 3.5em;
+    margin: 0 0 0 ;
     object-fit: contain;
 }
 
 #burguer{
-    padding: 0.2em;
-    color: white;
     font-size: 1.6em;
-    background-color: #20405d;
-    margin: 0 0.5em 0 0;
-    border-radius: 5px;
+    width: 23px;
+    margin-right: 0.5em;
+    color: #20405d;
+    outline: none;
+    box-shadow: none;
+}
+
+.menu-mobile{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: -1px 0px 35px -5px rgba(0,0,0,0.75);
+    background-color: white;
+    transition: all 0.5s ease 0s;
+}
+
+.menu-mobile-1{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    box-shadow: -1px 0px 35px -5px rgba(0,0,0,0.75);
+    background-color: white;
+    transition: all 0.5s ease 0s;
+}
+
+#flex-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-left: 2px solid transparent;
+    border-image: var(--gradient);
+    border-image-slice: 1;
+    height: 100%;
+    width: 100%;
+}
+
+#flex-menu p{
+    margin: 2.4em 0 0.8em 0;
+    font-size: 1.5em;
+    color: black;
+}
+
+#flex-cruz{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5em;
 }
 
 a   {
     text-decoration: none;
 }
 
+#cruz{
+    max-width: 20px;
+    max-height: 15px;
+}
+
 li{
     text-decoration: none;
     list-style-type: none;
-    color: #20405d;
-    transition: 0.8s;
+    font-size: 14px;
+    color: black;
+    cursor: pointer;
+}
+
+.registrarse{
+    padding: 0.5em;
+    background-color: #DC2D2D;
+    border-radius: 5px;
+    color: white !important;
 }
 
 li:hover{
     color: #0e1b27;
 }
 
+.hover-hidden {
+	visibility: hidden;
+	height: 0vh;
+	overflow: hidden;
+	transition: all 0.3s ease-out;
+}
+
+.hover-hidden:target {
+	visibility: visible;
+	height: 10vh;
+}
+
+/* #border{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: -20em;
+    top: 67px;
+    background: linear-gradient(90deg, #DC2D2D 25%, #04398C 80%);
+} */
+
+#border-desktop{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: -20em;
+    top: 67px;
+    background: linear-gradient(90deg, #DC2D2D 0.14%, #04398C 100%);
+}
+
 /*** MEDIA-QUERYS ***/
 
-@media (min-width: 530px) { /*** SWITCH MOBILE-DESKTOP ***/
+@media (min-width: 650px) { /*** SWITCH MOBILE-DESKTOP ***/
+    header{
+        position: relative;
+    }
     .desktop-visible{
         display: inline-block;
     }
     .mobile-visible{
-        display: none;
+        display: none ;
     }
     ul{
         display: flex !important;
         flex-direction: row;
         width: 100%;
         justify-content: space-around;
+    }
+}
+
+@media (min-width: 800px) { 
+    #nav-izq{
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    #nav-izq li{
+        margin: 0 0 0 3em;
+    }
+    
+    #nav-der{
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    #nav-der li{
+        margin: 0 3em 0 0;
     }
 }

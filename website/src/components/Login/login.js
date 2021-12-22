@@ -5,10 +5,10 @@ function Login(){
     return(
     <main id="main-login">
         <section id= "section-login">
-                <form id="form-login" action="/user/login?method" method="POST"> 
+                <form id="form-login" className="button-with-gradient-border" action="/user/login?method" method="POST"> 
                     <p class="titular"><strong>Ingresá</strong></p>
-                    <p class="dummy-text">El éxito no se mide en el dinero, sino en la diferencia que marcas en las personas. – Michelle Obama</p>
-                    <input type="email" name="email" id="email"  placeholder="Email" class="input-campo" value="" />
+                    <p class="dummy-text">El éxito no se mide en el dinero, sino en la diferencia que marcas en las personas. Michelle Obama</p>
+                    <input type="email" placeholder="Email" />
                     <p class="mensajeEmail"> </p>
                     {/* <% if (locals.errors && errors.email) { %>
                         <p class = "msg-error">
