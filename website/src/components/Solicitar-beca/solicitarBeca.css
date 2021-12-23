@@ -107,6 +107,10 @@
     justify-content: center;
 }
 
+.solicitar-radio{
+    width: 30%;
+}
+
 .flex-radio{
     width: 85%;
 }
@@ -160,7 +164,7 @@
 
 @media (min-width: 1000px) {
     .article-beca h3 {
-        font-size: 45px;
+        font-size: 42px;
     }
 
     .article-beca li{

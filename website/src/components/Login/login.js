@@ -5,7 +5,7 @@ function Login(){
     return(
     <main id="main-login">
         <section id= "section-login">
-                <form id="form-login" className="button-with-gradient-border" action="/user/login?method" method="POST"> 
+                <form id="form-login" action="/user/login?method" method="POST"> 
                     <p class="titular"><strong>Ingresá</strong></p>
                     <p class="dummy-text">El éxito no se mide en el dinero, sino en la diferencia que marcas en las personas. Michelle Obama</p>
                     <input type="email" placeholder="Email" />
@@ -28,7 +28,6 @@ function Login(){
                         <p>Recordarme</p>
                     </fieldset>
                     <fieldset id="flex-ingresar">
-                        <a href="/" id="buttonIngresar"></a>
                         <input id="button-login" type="submit" value="Ingresar" />
                         <a href="/user/contrasenia"><p class="olvide">Olvidé mi contraseña</p></a>
                         <a href="/user/register"><p class="crear">Crear mi cuenta</p></a>

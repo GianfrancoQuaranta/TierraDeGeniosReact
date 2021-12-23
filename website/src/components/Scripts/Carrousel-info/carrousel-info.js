@@ -25,35 +25,35 @@ render() {
     return (
     <div id="Contendor-info" className="desktop-visible-home">
         <ReactCardCarousel autoplay={true} autoplay_speed={3000}>
-        <div className="Articulos-info button-with-gradient-border">
+        <div className="Articulos-info ">
             <h3>1- Completá el Formulario.</h3>
             <img src={Parte1} alt="Parte1"/>
         </div>
-        <div className="Articulos-info button-with-gradient-border">
+        <div className="Articulos-info ">
             <h3>2- Revisamos las solicitudes.</h3>
             <img src={Parte2} alt="Parte2"/>
         </div>
-        <div className="Articulos-info button-with-gradient-border">
+        <div className="Articulos-info ">
             <h3>3- Seleccionamos a los beneficiarios.</h3>
             <img src={Parte3} alt="Parte3"/>
         </div>
-        <div className="Articulos-info button-with-gradient-border">
+        <div className="Articulos-info ">
             <h3>4- Entrevista con el/la solicitante.</h3>
             <img src={Parte4} alt="Parte4"/>
         </div>
-        <div className="Articulos-info button-with-gradient-border">
+        <div className="Articulos-info ">
             <h3>5- Recaudamos el dinero para las becas.</h3>
             <img src={Parte5} alt="Parte5"/>
         </div>
-        <div className="Articulos-info button-with-gradient-border">
+        <div className="Articulos-info ">
             <h3>6- Nuestros becados se graduan.</h3>
             <img src={Parte6} alt="Parte6 "/>
         </div>
-        <div className="Articulos-info button-with-gradient-border">
+        <div className="Articulos-info ">
             <h3>7- Devolución de la inversión.</h3>
             <img src={Parte7} alt="Parte7"/>
         </div>
-        <div className="Articulos-info button-with-gradient-border">
+        <div className="Articulos-info ">
             <h3>8- Inserción laboral de nuestros graduados.</h3>
             <img src={Parte8} alt="Parte8"/>
         </div>

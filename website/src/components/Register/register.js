@@ -18,7 +18,7 @@ function Register (){
                 </article>
             </article> */}
             <section id="registro-dos">
-                <form id="form-registro" action="/user/register" method="POST" enctype="multipart/form-data" className='button-with-gradient-border'>
+                <form id="form-registro" action="/user/register" method="POST" enctype="multipart/form-data">
                     <p id="registrarse-titulo">Formulario de registro</p>
                     <fieldset>
                         {/* <label>Nombre:</label> */}

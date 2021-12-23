@@ -17,13 +17,6 @@
     box-shadow: 2px 4px 23px 4px rgba(0, 0, 0, 0.25);
 }
 
-.button-with-gradient-border {
-    background-image: radial-gradient(circle at 100% 100%, transparent 29px, #dc2d2d 29px, #dc2d2d 32px, transparent 32px), linear-gradient(to right, #dc2d2d, #dc2d2d), radial-gradient(circle at 0% 100%, transparent 29px, #dc2d2d 29px, #dc2d2d 32px, transparent 32px), linear-gradient(to bottom, #dc2d2d, #04398c), radial-gradient(circle at 0% 0%, transparent 29px, #04398c 29px, #04398c 32px, transparent 32px), linear-gradient(to left, #04398c, #04398c), radial-gradient(circle at 100% 0%, transparent 29px, #04398c 29px, #04398c 32px, transparent 32px), linear-gradient(to top, #04398c, #dc2d2d);
-    background-size: 32px 32px, calc(100% - 64px) 3px, 32px 32px, 3px calc(100% - 64px);
-    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
-    background-repeat: no-repeat;
-}
-
 #section-registro{
     display: flex;
     width: 100%;
