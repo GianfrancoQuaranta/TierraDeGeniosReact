@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./about-us.css"
 import Scroll from"../Scrolltop/scrolltop"
 
@@ -14,6 +14,34 @@ import Gian from './img/gian.png'
 
 
 function AboutUs(){
+
+    const [showMenu, setShowMenu] = useState(0)
+
+    let menu
+
+    if(showMenu === 1) {
+        menu = 
+            <article className="info-box" onClick={() => setShowMenu(0)}>
+                <article clasName="box-pilares">
+                    <p>Hola</p>
+                </article>
+            </article>
+    }else if(showMenu === 2) {
+        menu = 
+            <article className="info-box" onClick={() => setShowMenu(0)}>
+                <article className="box-pilares">
+                    <p>Como</p>
+                </article>
+            </article>
+    }else if(showMenu === 3) {
+        menu = 
+            <article className="info-box" onClick={() => setShowMenu(0)}>
+                <article className="box-pilares">
+                    <p>Andas</p>
+                </article>
+            </article>
+    }
+    
     return(
     <main>
         < Scroll />
@@ -35,10 +63,10 @@ function AboutUs(){
         </section>
         <section id="Pilares">
             <h3 className="about-us-h3">Nuestros Pilares</h3>
-            <article id="flex-pilares">
-                <article><h3>Lean Startup</h3></article>
-                <article><h3>Micro Servicios</h3></article>
-                <article><h3>Scrum</h3></article>
+            <article id="flex-pilares" >
+                <article onClick={() => setShowMenu(1)}><h3>Lean Startup</h3></article>
+                <article onClick={() => setShowMenu(2)}><h3>Micro Servicios</h3></article>
+                <article onClick={() => setShowMenu(3)}><h3>Scrum</h3></article>
             </article>
         </section>
         <section>
@@ -84,6 +112,7 @@ function AboutUs(){
                     </article>
                 </section>
         </section>
+        { menu }
     </main>
 )
 

@@ -247,9 +247,12 @@ h2{
     h2{
         font-size:2em
     }
+    
     #Fundacion p{
+        font-size: 21px;
         padding: 0 3em;
     }
+    
     #Recaudacion p {
         font-size: 1.4em;
     }
@@ -261,13 +264,20 @@ h2{
 
 @media (min-width: 530px) {
     #titulo-centro {
-        font-size: 40px;
+        font-size: 38px;
         top: 2em;
         width: 57%;
     }
 }
 
 @media (min-width: 650px) {
+
+    #titulo-centro {
+        font-size: 46px;
+        top: 2em;
+        width: 61%;
+    }
+
     #mobile-visible-home{
         display: none;
     }
@@ -278,6 +288,12 @@ h2{
 }
 
 @media (min-width: 768px) {/*** SMALL SCREENS - LAPTOPS ***/
+
+    #titulo-centro {
+        font-size: 48px;
+        top: 1.7em;
+        width: 54%;
+    }
     #mobile-visible-home{
         display: none;
     }
@@ -289,7 +305,7 @@ h2{
         margin: 4em 0;
     }
     #Fundacion p{
-        font-size: 25px;
+        font-size: 30px;
     }
     /*** RECAUDACION ***/
     #Recaudacion{
@@ -301,7 +317,20 @@ h2{
     }
 }
 
-@media (min-width: 900px) { 
+@media (min-width: 900px) {
+
+    #button-header{
+        top: -110px;
+        left: 3px;
+        font-size: 24px;
+    }
+
+    #titulo-centro {
+        font-size: 56px;
+        top: 2.4em;
+        width: 65%;
+    }
+
     h2 {
         font-size: 2.2em;
     }
@@ -329,17 +358,10 @@ h2{
 
 @media (min-width: 1000px) { /*** DESKTOPS ***/
     #titulo-centro {
-        font-size: 65px;
-        top: 1.3em;
-        width: 70%;
+        font-size: 58px;
+        top: 2em;
+        width: 55%;
     }
-
-    #button-header{
-        top: -110px;
-        left: 3px;
-        font-size: 24px;
-    }
-    
     .section-home {
         margin: 5em 0 5em 0;
     }

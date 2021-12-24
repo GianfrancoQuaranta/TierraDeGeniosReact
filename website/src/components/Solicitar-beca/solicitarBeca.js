@@ -1,10 +1,13 @@
 import React from 'react';
 import "./solicitarBeca.css";
+import Scroll from"../Scrolltop/scrolltop"
 
 
 function solicitarBecas(){
+
     return(
         <main id="solicitar-main">
+            < Scroll />
             <section>
                 <article id="Solicitar-article">
                     <h2 className="h2-solicitar">Solicitar Beca</h2>
@@ -47,11 +50,11 @@ function solicitarBecas(){
                             estar momentáneamente sin trabajo, esta se pausará hasta que superes nuevamente los $100.000 mensuales. 
                         </p>
                         <p>Para más información, <a href="#">comunícate con nosotros</a>.</p>
-                </article>
                 <article id="flex-video">
                     <iframe src="https://www.youtube.com/embed/ZgbO4biZasU" title="YouTube video player" 
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen className="video-youtube-incrustado"></iframe>
+                </article>
                 </article>
             </section>
             <section id="form-article">

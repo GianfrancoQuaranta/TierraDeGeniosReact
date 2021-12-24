@@ -46,9 +46,7 @@ footer #Logo {
     margin: 0px 0 0 0.5em;
 }
 
-#tdg{
-    margin-right: 1.2em;
-}
+
 
 #facebook{
     font-size: 2em;
@@ -82,7 +80,9 @@ footer #Logo {
 
 Footer p {
     margin: 0.5em 0 0.5em 0;
+    font-size: 14px;
 }
+
 
 /* #border-footer{
     position: absolute;
@@ -118,11 +118,27 @@ Footer p {
     footer #Logo {
         margin: 0px 0 0 2.0em;
     }
+
+    #tdg{
+        margin-right: 1.2em;
+    }
+
+    Footer p{
+        font-size: 16px;
+    }
 }
 
 @media (min-width: 1000px){
     footer nav{
         width: 30%;
+    }
+
+    #flex-footer-izq {
+        width: 94%;
+    }
+
+    #tdg{
+        margin-right: 2em;
     }
 }
 
