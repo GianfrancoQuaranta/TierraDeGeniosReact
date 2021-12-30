@@ -78,6 +78,10 @@
     box-shadow: 2px 4px 23px 4px rgba(0, 0, 0, 0.25);
 }
 
+#preguntas-fieldset{
+    margin: 2.5em 0;
+}
+
 #form-article{
     padding: 1em;
     display: flex;
@@ -95,9 +99,17 @@
 }
 
 #form-article p{
-    margin: 1.5em 0;
+    margin: 1em 0;
     text-align: center;
     font-size: 20px;
+}
+
+legend{
+    text-align: center;
+}
+
+label{
+    text-align: center;
 }
 
 .flex-radio{
@@ -123,6 +135,11 @@
 }
 
 @media (min-width: 650px) {
+
+    #form-solicitar input{
+        padding: 13px;
+    }
+
     #compromiso{
         margin: 5em 0 5em 0;
     }
@@ -168,16 +185,16 @@
     }
 
     .article-beca li{
-        font-size: 40px;
+        font-size: 35px;
     }
 
     #solicitar-p {
-        font-size: 40px !important;
+        font-size: 35px !important;
         padding: 0 2em;
     }
 
     .article-beca li:hover{
-        font-size: 45px;
+        font-size: 40px;
     }
 
     .video-youtube-incrustado {

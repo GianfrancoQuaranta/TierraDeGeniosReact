@@ -18,7 +18,9 @@ function App() {
   return (
     <React.Fragment>
       <Header />
+    <React.StrictMode>
       <Switch />
+    </React.StrictMode>
       <Footer />
     </React.Fragment>
   );  

@@ -106,7 +106,7 @@ nav article{
 }
 
 #flex-menu p{
-    margin: 2.4em 0 0.8em 0;
+    margin: 1.6em 0 0.8em 0;
     font-size: 1.5em;
     color: black;
 }
@@ -212,5 +212,29 @@ li:hover{
     
     #nav-der li{
         margin: 0 3em 0 0;
+    }
+}
+
+@media (min-height: 600px) {
+    #flex-menu p{
+        margin: 2.4em 0 0.8em 0;
+        font-size: 1.5em;
+        color: black;
+    }
+}
+
+@media (min-height: 700px) {
+    #flex-menu p{
+        margin: 2.6em 0 0.8em 0;
+        font-size: 1.7em;
+        color: black;
+    }
+}
+
+@media (min-height: 800px) {
+    #flex-menu p{
+        margin: 2.8em 0 0.8em 0;
+        font-size: 2em;
+        color: black;
     }
 }

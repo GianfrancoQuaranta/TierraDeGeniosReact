@@ -17,12 +17,6 @@ function Header(){
 
     let salir = <img src={Cruz} id="cruz" alt="cruz" onClick={() => setShowMenu(false)} />
 
-    // const burguer1 = document.querySelector(".menu-mobile-1")
-
-    // if (showMenu == true) {
-    //     burguer1.classList.remove("menu-mobile-1") && burguer1.classList.add("menu-mobile")
-    // }
-
     if(showMenu === true) {
         menu = 
             <article className="menu-mobile">

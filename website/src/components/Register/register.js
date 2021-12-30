@@ -18,12 +18,12 @@ function Register (){
                 </article>
             </article> */}
             <section id="registro-dos">
-                <form id="form-registro" action="/user/register" method="POST" enctype="multipart/form-data">
+                <form id="form-registro" action="/user/register" method="POST" encType="multipart/form-data">
                     <p id="registrarse-titulo">Formulario de registro</p>
                     <fieldset>
                         {/* <label>Nombre:</label> */}
                         <input type="text" name="firstName" placeholder="Nombre"  />
-                        <p class="mensajeFirstName"> </p>
+                        <p className="mensajeFirstName"> </p>
                         {/* <% if (locals.errors && errors.firstName) { %>
                             <p id= "text-danger">
                                 <%= errors.firstName.msg %> 
@@ -32,7 +32,7 @@ function Register (){
                         
                         {/* <label>Apellido:</label> */}
                         <input type="text" name="lastName" placeholder="Apellido"  />
-                        <p class="mensajeLastName"> </p>
+                        <p className="mensajeLastName"> </p>
                         {/* <% if (locals.errors && errors.lastName) { %>
                             <p id= "text-danger">
                                 <%= errors.lastName.msg %> 
@@ -40,7 +40,7 @@ function Register (){
                         <% } %> */}
                         {/* <label for="avatar">Seleccionar imagen de perfil</label> */}
                         <input type="file" name="avatar" />
-                        <p class="mensajeAvatar"> </p>
+                        <p className="mensajeAvatar"> </p>
                         {/* <% if (locals.errors && !errors.avatar) { %>
                             <p id="text-danger">
                                 Debes seleccionar una imagen de perfil nuevamente
@@ -53,7 +53,7 @@ function Register (){
                         <% } %> */}
                         {/* <label>Email:</label> */}
                         <input type="email" name="email" placeholder= "Email" />
-                        <p class="mensajeEmail"> </p>
+                        <p className="mensajeEmail"> </p>
                         {/* <% if (locals.errors && errors.email) { %>
                             <p id="text-danger">
                                 <%= errors.email.msg %> 
@@ -75,7 +75,7 @@ function Register (){
                         
                         {/* <label>Domicilio:</label> */}
                         <input type="text" name="adress" placeholder="Dirección"   />
-                        <p class="mensajeAdress"> </p>
+                        <p className="mensajeAdress"> </p>
                         {/* <% if (locals.errors && errors.adress) { %>
                             <p id= "text-danger">
                                 <%= errors.adress.msg %> 
@@ -83,7 +83,7 @@ function Register (){
                         <% } %> */}
                         {/* <label>Número de contacto:</label> */}
                         <input type="tel" name="phoneNumber" placeholder="Telefono"   />
-                        <p class="mensajePhoneNumber"> </p>
+                        <p className="mensajePhoneNumber"> </p>
                         {/* <% if (locals.errors && errors.phoneNumber) { %>
                             <p id= "text-danger">
                                 <%= errors.phoneNumber.msg %> 
@@ -92,7 +92,7 @@ function Register (){
                         
                         {/* <label>País:</label> */}
                         <input type="text" name="country" placeholder="Pais"   />
-                        <p class="mensajeCountry"> </p>
+                        <p className="mensajeCountry"> </p>
                         {/* <% if (locals.errors && errors.country) { %>
                             <p id= "text-danger">
                                 <%= errors.country.msg %> 
@@ -101,7 +101,7 @@ function Register (){
                         
                         {/* <label>Contraseña:</label> */}
                         <input type="password" name="password" placeholder="Contraseña"  />
-                        <p class="mensajePassword"> </p>
+                        <p className="mensajePassword"> </p>
                         {/* <% if (locals.errors && errors.password) { %>
                             <p id= "text-danger">
                                 <%= errors.password.msg %> 
@@ -109,7 +109,7 @@ function Register (){
                         <% } %> */}
                         {/* <label>Confirmar contraseña:</label> */}
                         <input type="password" name="passwordConfirm" placeholder="Confirmar contraseña"  />
-                        <p class="mensajePasswordConfirm"> </p>
+                        <p className="mensajePasswordConfirm"> </p>
                         {/* <% if (locals.errors && errors.passwordConfirm) { %>
                             <p id= "text-danger">
                                 <%= errors.passwordConfirm.msg %> 

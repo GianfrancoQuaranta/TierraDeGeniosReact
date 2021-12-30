@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './carrousel-header.css'
 import BtnSlider from './slider'
 import dataSlider from './dataSlider'
@@ -7,8 +7,17 @@ import dataSlider from './dataSlider'
 
 
 export default function Slider() {
-
     const [slideIndex, setSlideIndex] = useState(1)
+
+    function useAsync(asyncFn, onSuccess) {
+        useEffect(() => {
+        let isActive = true;
+        asyncFn().then(data => {
+            if (isActive) onSuccess(data);
+        });
+        return () => { isActive = false };
+        }, [asyncFn, onSuccess]);
+    }
 
     const nextSlide = () => {
         if(slideIndex !== dataSlider.length){
@@ -28,7 +37,6 @@ export default function Slider() {
         }
     }
 
-
     const moveDot = index => {
         setSlideIndex(index)
     }
@@ -37,9 +45,9 @@ export default function Slider() {
         <div className="container-slider">
             {dataSlider.map((obj, index) => {
                 return (
-                    <React.Fragment >
-                        <div key="index" className={slideIndex === index + 1 ? "slide active-anim" : "slide"} >
-                        <img src={process.env.PUBLIC_URL + `./img/img${index + 1}.jpg`}  />
+                    <React.Fragment key={index + 1}>
+                        <div className={slideIndex === index + 1 ? "slide active-anim" : "slide"} >
+                        <img src={process.env.PUBLIC_URL + `./img/img${index + 1}.jpg`} alt={"imagen" + (index + 1)} />
                         </div>
                     </React.Fragment>
                 )
@@ -49,7 +57,7 @@ export default function Slider() {
 
             <div className="container-dots">
                 {Array.from({length: 2}).map((item, index) => (
-                    <div 
+                    <div key={index + 1}
                     onClick={() => moveDot(index + 1)}
                     className={slideIndex === index + 1 ? "dot active" : "dot"}
                     ></div>

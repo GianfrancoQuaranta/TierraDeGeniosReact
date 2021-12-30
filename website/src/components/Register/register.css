@@ -34,7 +34,7 @@ input{
     background: var(--gradient);
 }
 
-label{
+#form-register label{
     margin: 1em 0;
 }
 

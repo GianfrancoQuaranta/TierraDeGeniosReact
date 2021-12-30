@@ -4,7 +4,6 @@ import leftArrow from "./img/icons/flecha-izquierda.svg";
 import rightArrow from "./img/icons/flecha-derecha.svg";
 
 export default function BtnSlider({ direction, moveSlide }) {
-console.log(direction, moveSlide);
 return (
     <button onClick={moveSlide} className={direction === "next" ? "btn-slide next" : "btn-slide prev"}
     >

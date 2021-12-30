@@ -52,8 +52,8 @@ function solicitarBecas(){
                         <p>Para más información, <a href="#">comunícate con nosotros</a>.</p>
                 <article id="flex-video">
                     <iframe src="https://www.youtube.com/embed/ZgbO4biZasU" title="YouTube video player" 
-                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen className="video-youtube-incrustado"></iframe>
+                    frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen className="video-youtube-incrustado"></iframe>
                 </article>
                 </article>
             </section>
@@ -65,75 +65,85 @@ function solicitarBecas(){
                 <article id='recuadro-form'>
                     <form action="" method="" id="form-solicitar">
                         <fieldset>
-                            <label for="email" class=""></label>
+                            <label htmlFor="email"></label>
                             <input type="email" name="email" id="email"   placeholder="Email" required></input>
                         </fieldset>
                         <fieldset>
-                            <label for="name" class=""></label>
+                            <label htmlFor="name"></label>
                             <input type="text" name="nombre" id="name"   placeholder="Nombre" required></input>
                         </fieldset>
                         <fieldset>
-                            <label for="surname" class=""></label>
+                            <label htmlFor="surname"></label>
                             <input type="text" name="surname" id="surname"  placeholder="Apellido" required></input>
                         </fieldset>
                         <fieldset>
-                            <label for="cellphone" class=""></label>
+                            <label htmlFor="cellphone" ></label>
                             <input type="number" name="cellphone" id="cellphone"  placeholder="Celular" required></input>
                         </fieldset>
                         <fieldset>
-                            <label for="date" class="label-fecha-de-nacimiento">Fecha de Nacimiento</label>
-                            <input type="date" name="date" id="date"  placeholder="Fecha de Nacimiento" class="input-label-fecha-de-nacimiento" required></input>
+                            <p>Fecha de nacimiento</p>
+                            <label htmlFor="date" className="label-fecha-de-nacimiento"></label>
+                            <input type="date" name="date" id="date"  placeholder="Fecha de Nacimiento" className="input-label-fecha-de-nacimiento" required></input>
                         </fieldset>
                         <fieldset>
-                            <label for="address" class=""></label>
+                            <label htmlFor="address"></label>
                             <input type="text" name="address" id="address"  placeholder="Domicilio" required></input>
                         </fieldset>
                         <fieldset>
-                            <label for="city" class=""></label>
+                            <label htmlFor="city"></label>
                             <input type="text" name="city" id="city"  placeholder="Ciudad" required></input>
                         </fieldset>
                         <fieldset>
-                            <label for="localidad" class=""></label>
+                            <label htmlFor="localidad"></label>
                             <input type="text" name="localidad" id="localidad"  placeholder="Localidad" required></input>
                         </fieldset>
                         <fieldset>
-                            <label for="country" class=""></label>
+                            <label htmlFor="country"></label>
                             <input type="text" name="country" id="country"  placeholder="País" required></input>
                         </fieldset>
                     <fieldset>
                         <legend>¿Haz terminado el secundario?</legend>
                         <fieldset className="flex-radio">
-                            <label for="secundario-terminado"></label>
+                            <label htmlFor="secundario-terminado"></label>
                             <input type="radio" className="solicitar-radio" name="secundario-terminado" id="" value="Si"></input>
                             <p>Si</p>
-                            <label for="secundario-terminado"></label>
+                            <label htmlFor="secundario-terminado"></label>
                             <input type="radio"  className="solicitar-radio" name="secundario-terminado" id="" value="No"></input>
                             <p>No</p>
                         </fieldset>
                     </fieldset>
-                        <legend>¿Qué formación académica posees hoy?</legend>
-                        <p class="p-formacion-academica-actual p-label-leyenda-small"><small>En caso de no poseer, especificar.</small></p>
-                        <input type="text" name="formacion-academica-actual" id="formacion-academica-actual"  placeholder="" 
-                        class="input-formacion-academica-actual" required></input>
-                        <label for="que-quiere-estudiar" class=""></label>
-                        <legend>¿Qué formación académica tecnológica te gustaría realizar?</legend>
-                        <p class="p-label-leyenda-small"><small>Ejemplo: Desarrolo Web Full Stack, Data Science, etc.</small></p>
-                        <input type="text" name="que-quiere-estudiar" id="que-quiere-estudiar"  placeholder="" class="" required></input>
-                        <label for="academia-donde-quiere-estudiar" class=""></label>
-                        <legend>¿En qué academia quieres estudiar?</legend>
-                        <p class="p-label-leyenda-small"><small>Ejemplo: Digital House, Acamica, etc.</small></p>
-                        <input type="text" name="academia-donde-quiere-estudiar" id="academia-donde-quiere-estudiar"  placeholder="" class="" required></input>
-                        <label for="que-lo-motiva-a-estudiar" class=""></label>
-                        <legend>¿Qué te motiva a querer estudiarla?</legend>
-                        <p><small>Salida laboral, Especialización, etc.</small></p>
-                        <input type="text" name="que-lo-motiva-a-estudiar" id="que-lo-motiva-a-estudiar"  placeholder="" class="" required></input>
+                    <fieldset id="preguntas-fieldset">
+                        <fieldset>
+                            <legend>¿Qué formación académica posees hoy?</legend>
+                            <p><small>En caso de no poseer, especificar.</small></p>
+                            <input type="text" name="formacion-academica-actual" required></input>
+                            <label htmlFor="que-quiere-estudiar"></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>¿Qué formación académica tecnológica te gustaría realizar?</legend>
+                            <p><small>Ejemplo: Desarrolo Web Full Stack, Data Science, etc.</small></p>
+                            <input type="text" name="que-quiere-estudiar" id="que-quiere-estudiar" required></input>
+                            <label htmlFor="academia-donde-quiere-estudiar"></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>¿En qué academia quieres estudiar?</legend>
+                            <p><small>Ejemplo: Digital House, Acamica, etc.</small></p>
+                            <input type="text" name="academia-donde-quiere-estudiar" required></input>
+                            <label htmlFor="que-lo-motiva-a-estudiar"></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>¿Qué te motiva a querer estudiarla?</legend>
+                            <p><small>Salida laboral, Especialización, etc.</small></p>
+                            <input type="text" name="que-lo-motiva-a-estudiar" id="que-lo-motiva-a-estudiar" required></input>
+                        </fieldset>
+                    </fieldset>
                     <fieldset>
                         <legend>¿Posees computadora?</legend>
                         <fieldset className="flex-radio">
-                            <label for="posesion-de-computadora"></label>
+                            <label htmlFor="posesion-de-computadora"></label>
                             <input type="radio" className="solicitar-radio" name="posesion-de-computadora" id="posesion-de-computadora" value="Si"></input>
                             <p>Si</p>
-                            <label for="posesion-de-computadora"></label>
+                            <label htmlFor="posesion-de-computadora"></label>
                             <input type="radio" className="solicitar-radio" name="posesion-de-computadora" id="posesion-de-computadora" value="No"></input>
                             <p>No</p>
                         </fieldset>
@@ -141,33 +151,31 @@ function solicitarBecas(){
                     <fieldset>
                         <legend>¿Posees acceso a internet?</legend>
                         <fieldset className="flex-radio">
-                            <label for="posesion-acceso-internet"></label>
+                            <label htmlFor="posesion-acceso-internet"></label>
                             <input type="radio" className="solicitar-radio" name="posesion-acceso-internet" id="posesion-acceso-internet" value="Si"></input>
                             <p>Si</p>
-                            <label for="posesion-acceso-internet"></label>
+                            <label htmlFor="posesion-acceso-internet"></label>
                             <input type="radio" className="solicitar-radio" name="posesion-acceso-internet" id="posesion-acceso-internet" value="No"></input>
                             <p>No</p>
                         </fieldset>
                     </fieldset>
-                    <p class="confirma-tu-correo-form"><b>¡Confirma tu correo para que tu solicitud esté completa!</b></p>
+                    <p><b>¡Confirma tu correo para que tu solicitud esté completa!</b></p>
                     <fieldset>
-                        <p class="p-consentimiento-datos">*Tierra de Genios se compromete a proteger y respetar tu privacidad, usaremos tu información personal para administrar tu cuenta y proporcionar los que nos has solicitado. Si aceptas que nos comuniquemos contigo, marca las casillas a continuación:
+                        <p>*Tierra de Genios se compromete a proteger y respetar tu privacidad, usaremos tu información personal para administrar tu cuenta y proporcionar los que nos has solicitado. Si aceptas que nos comuniquemos contigo, marca las casillas a continuación:
                         </p>
-                            <label for="consentimiendo-datos" class="label-checkbox"></label>
+                            <label htmlFor="consentimiendo-datos"></label>
                         <fieldset className="flex-acepto">
-                                <input type="checkbox" name="consentimiendo-datos" id="consentimiendo-datos" value="acepta-comunicaciones" placeholder="" 
-                                class="input-label-consentimiento-datos" required></input>
-                                <p class="p-input-label-consentimiento-datos">Acepto recibir otras comunicaciones de Tierra de Genios.</p>
+                                <input type="checkbox" name="consentimiendo-datos" required></input>
+                                <p>Acepto recibir otras comunicaciones de Tierra de Genios.</p>
                         </fieldset>
-                            <label for="consentimiendo-datos" class="label-checkbox"></label>
+                            <label htmlFor="consentimiendo-datos"></label>
                         <fieldset className="flex-acepto">
-                                <input type="checkbox" name="consentimiendo-datos" id="consentimiendo-datos" value="acepta-almacenar-y-procesar-datos" placeholder="" 
-                                class="input-label-consentimiento-datos" required></input>
-                                <p class="p-input-label-consentimiento-datos">Acepto permitir a Tierra de Genios almacenar y procesar mis datos personales.</p>
+                                <input type="checkbox" name="consentimiendo-datos" required></input>
+                                <p>Acepto permitir a Tierra de Genios almacenar y procesar mis datos personales.</p>
                         </fieldset>
                     </fieldset>
                     {/* Acá va el captcha */}
-                    <button type="submit" class="button-form">Enviar</button>
+                    <button type="submit" className="button-form">Enviar</button>
                     </form>
                 </article>
             </section>
