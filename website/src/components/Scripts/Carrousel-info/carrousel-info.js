@@ -12,8 +12,8 @@ import Parte3 from "./img/Tercera-parte.png"
 import Parte4 from "./img/Cuarta-parte.png"
 import Parte5 from "./img/Quinta-parte.webp"
 import Parte6 from "./img/Sexta-parte.png"
-import Parte7 from "./img/Septima-parte.png"
-import Parte8 from "./img/Octava-parte.png"
+import Parte7 from "./img/Octava-parte.png"
+import Parte8 from "./img/Septima-parte.png"
 
 
 
@@ -50,11 +50,11 @@ render() {
             <img src={Parte6} alt="Parte6 "/>
         </div>
         <div className="Articulos-info ">
-            <h3>7- Devolución de la inversión.</h3>
+            <h3>7- Inserción laboral de nuestros graduados.</h3>
             <img src={Parte7} alt="Parte7"/>
         </div>
         <div className="Articulos-info ">
-            <h3>8- Inserción laboral de nuestros graduados.</h3>
+            <h3>8- Devolución de la inversión.</h3>
             <img src={Parte8} alt="Parte8"/>
         </div>
         </ReactCardCarousel>

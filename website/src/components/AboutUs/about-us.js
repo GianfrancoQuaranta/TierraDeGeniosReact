@@ -54,7 +54,7 @@ function AboutUs(){
                         <p>Desarrollador Web Full Stack - Digital House</p>
                         <p>Estudiante Lic. en Comercialización, Marketing.</p>
                         <p>Diplomado en Marketing Digital - Mundos E/UNC.</p>
-                        <p>Emprendedor desde los 16 años.</p>
+                        <p>10 años emprendiendo.</p>
                     </article>
                 </article>
     }else if(showMenu === 6) {
@@ -73,7 +73,7 @@ function AboutUs(){
                         <h3>Titulos y Trabajo dentro dentro de TDG :</h3>
                         <p>Lic. en Ciencias de la Comunicación</p>
                         <p>Técnica Superior en Relaciones Públicas</p>
-                        <p>Estudiante Coaching Ontológico Profesional Avamzada</p>
+                        <p>Coach Ontológico Profesional </p>
                         <p>Community Manager</p>
                     </article>
                 </article>

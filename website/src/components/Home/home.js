@@ -48,7 +48,6 @@ function Home(){
                         </article>
                     </article>
             </section>
-            <div id="border"></div>
             <section id="Beca" className="section-home">
                 <h2>¿Cómo funciona Tierra de Genios?</h2>
                 < Carrusel2 />
