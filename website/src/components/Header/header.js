@@ -7,7 +7,7 @@ import {Link} from "react-router-dom"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Cruz from "./img/cross.svg"
-import TDG from "../Home/img/TDG-completo.wbp"
+import TDG from "../Home/img/TDG-completo.webp"
 
 function Header(){
 
