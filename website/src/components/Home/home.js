@@ -9,9 +9,9 @@ import Scroll from"../Scrolltop/scrolltop"
 
 /*** IMAGES ***/
 
-import Nelson from "./img/nelsonMandela.jpg"
+import Nelson from "./img/nelsonMandela.webp"
 import Rosa from "./img/fundacion-rosa.png"
-import TDG from "./img/TDG-completo.png"
+import TDG from "./img/TDG-completo.webp"
 import Beca from "./img/beca.png"
 
 
