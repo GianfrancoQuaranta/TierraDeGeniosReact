@@ -6,7 +6,7 @@ import Login from "../Login/login";
 import Register from "../Register/register";
 import Applicant from "../ApplicantDetail/applicant";
 import AboutUs from "../AboutUs/about-us";
-
+import GA from "../Scripts/GoogleAnalytics/GA"
 
 
 // componentDidUpdate = (prevProps) => {
@@ -18,6 +18,7 @@ import AboutUs from "../AboutUs/about-us";
 function SwitchLinks(){
     return(
         <Switch>
+            {/* <GA/> */}
             <Route exact path="/" component={Home} />
             <Route path="/solicitar-beca" component={solicitarBeca} />
             <Route path="/registrarse" component={Register} />

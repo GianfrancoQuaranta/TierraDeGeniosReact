@@ -9,7 +9,6 @@ import Joaco from './img/joaco.png'
 import Mayra from './img/mayra.png'
 import Juanse from './img/juanse.png'
 import Gian from './img/gian.png'
-// import Cruz from '../Header/img/cross.svg'
 
 /** FUNCIONES **/
 
@@ -20,7 +19,6 @@ function AboutUs(){
     
     const [showMenu, setShowMenu] = useState(0)
     
-    // let salir = <img src={Cruz} id="cruz" alt="cruz" onClick={() => setShowMenu(0)} />
     let menu
 
     if(showMenu === 1) {
