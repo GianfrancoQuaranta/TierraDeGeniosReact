@@ -6,14 +6,14 @@ import "./carrousel-info.css"
 
 /*** IMAGENES ***/
 
-import Parte1 from "./img/Primera-parte.png"
-import Parte2 from "./img/Segunda-parte.png"
-import Parte3 from "./img/Tercera-parte.png"
-import Parte4 from "./img/Cuarta-parte.png"
+import Parte1 from "./img/Primera-parte.webp"
+import Parte2 from "./img/Segunda-parte.webp"
+import Parte3 from "./img/Tercera-parte.webp"
+import Parte4 from "./img/Cuarta-parte.webp"
 import Parte5 from "./img/Quinta-parte.webp"
-import Parte6 from "./img/Sexta-parte.png"
-import Parte7 from "./img/Octava-parte.png"
-import Parte8 from "./img/Septima-parte.png"
+import Parte6 from "./img/Sexta-parte.webp"
+import Parte7 from "./img/Octava-parte.webp"
+import Parte8 from "./img/Septima-parte.webp"
 
 
 
