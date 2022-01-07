@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+header{
+    /* min-height: 100%; */
+    max-height: 68px;
+    min-width: 100%;
+    font-family: 'Manrope', sans-serif;
+    position: fixed;
+    z-index: 3;
+}
+
+.mobile-visible{
+    display: inline-block;
+}
+
+.desktop-visible{
+    display: none;
+}
+
+nav{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid transparent;
+    border-image: var(--gradient);
+    border-image-slice: 1;
+    box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 35%);
+    background-color: white;
+}
+
+#nav-izq{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nav-der{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav article{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Logo {
+    width: 6.5em;
+    height: 3.5em;
+    margin: 0 0 0 1em;
+    object-fit: contain;
+}
+
+.Logo-menu {
+    width: 6.5em;
+    height: 3.5em;
+    margin: 0 0 0 ;
+    object-fit: contain;
+}
+
+#burguer{
+    font-size: 1.6em;
+    width: 23px;
+    margin-right: 0.5em;
+    color: #20405d;
+    outline: none;
+    box-shadow: none;
+}
+
+.menu-mobile{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: -1px 0px 35px -5px rgba(0,0,0,0.75);
+    background-color: white;
+    transition: all 0.5s ease 0s;
+}
+
+.menu-mobile-1{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    box-shadow: -1px 0px 35px -5px rgba(0,0,0,0.75);
+    background-color: white;
+    transition: all 0.5s ease 0s;
+}
+
+#flex-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-left: 2px solid transparent;
+    border-image: var(--gradient);
+    border-image-slice: 1;
+    height: 100%;
+    width: 100%;
+}
+
+#flex-menu p{
+    margin: 5.6em 0 0.8em 0;
+    font-size: 1.5em;
+    color: black;
+}
+
+#flex-cruz{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5em;
+}
+
+a   {
+    text-decoration: none;
+}
+
+#cruz{
+    max-width: 20px;
+    max-height: 15px;
+}
+
+li{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 14px;
+    color: black;
+    cursor: pointer;
+}
+
+.registrarse{
+    padding: 0.5em;
+    background-color: #DC2D2D;
+    border-radius: 5px;
+    color: white !important;
+}
+
+li:hover{
+    color: #0e1b27;
+}
+
+.hover-hidden {
+	visibility: hidden;
+	height: 0vh;
+	overflow: hidden;
+	transition: all 0.3s ease-out;
+}
+
+.hover-hidden:target {
+	visibility: visible;
+	height: 10vh;
+}
+
+/* #border{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: -20em;
+    top: 67px;
+    background: linear-gradient(90deg, #DC2D2D 25%, #04398C 80%);
+} */
+
+#border-desktop{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: -20em;
+    top: 67px;
+    background: linear-gradient(90deg, #DC2D2D 0.14%, #04398C 100%);
+}
+
+/*** MEDIA-QUERYS ***/
+
+@media (min-width: 650px) { /*** SWITCH MOBILE-DESKTOP ***/
+    header{
+        position: relative;
+    }
+    .desktop-visible{
+        display: inline-block;
+    }
+    .mobile-visible{
+        display: none ;
+    }
+    ul{
+        display: flex !important;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 800px) { 
+    #nav-izq{
+        display: flex;
+        justify-content: center;
+    }
+    
+    /* #nav-izq li{
+        margin: 0 0 0 3em;
+    } */
+    
+    #nav-der{
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    #nav-der li{
+        margin: 0 3em 0 0;
+    }
+}
+
+@media (min-height: 600px) {
+    #flex-menu p{
+        margin: 2.4em 0 0.8em 0;
+        font-size: 1.5em;
+        color: black;
+    }
+}
+
+@media (min-height: 700px) {
+    #flex-menu p{
+        margin: 2.6em 0 0.8em 0;
+        font-size: 1.7em;
+        color: black;
+    }
+}
+
+@media (min-height: 800px) {
+    #flex-menu p{
+        margin: 2.8em 0 0.8em 0;
+        font-size: 2em;
+        color: black;
+    }
+}

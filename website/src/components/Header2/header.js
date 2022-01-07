@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-// import "./header.css";
+import "./header.css";
 import Logo from "./img/texto-tdg.png"
 import {Link} from "react-router-dom"
 
@@ -25,9 +25,9 @@ function Header(){
                         { salir }
                     </article>
                     <img src={TDG} alt="logo" className="Logo-menu" />
-                    <Link to="/ingresar" onClick={() => setShowMenu(!showMenu)}><p>Iniciar Sesion</p></Link>
-                    <Link to="/registrarse" onClick={() => setShowMenu(!showMenu)}><p className="registrarse">Registrarse</p></Link>
-                    <Link to="/solicitar-beca" onClick={() => setShowMenu(!showMenu)}><p >Solicitar Beca</p></Link>
+                    {/* <Link to="/ingresar" onClick={() => setShowMenu(!showMenu)}><p>Iniciar Sesion</p></Link>
+                    <Link to="/registrarse" onClick={() => setShowMenu(!showMenu)}><p className="registrarse">Registrarse</p></Link> */}
+                    {/* <Link to="/solicitar-beca" onClick={() => setShowMenu(!showMenu)}><p >Solicitar Beca</p></Link> */}
                     <Link to="/sobre-nosotros" onClick={() => setShowMenu(!showMenu)}><p>Sobre Nosotros</p></Link>
                 </article>
             </article>
@@ -44,13 +44,13 @@ function Header(){
                     <FontAwesomeIcon icon="bars" id="burguer" className="mobile-visible" onClick={() => setShowMenu(!showMenu)}/>
                 <ul className="desktop-visible">
                     <article id="nav-izq">
-                        <Link to="/solicitar-beca"><li>SOLICITAR BECA</li></Link>
+                        {/* <Link to="/solicitar-beca"><li>SOLICITAR BECA</li></Link> */}
                         <Link to="/sobre-nosotros"><li>SOBRE NOSOTROS</li></Link>
                     </article>
-                    <article id="nav-der">
+                    {/* <article id="nav-der">
                         <Link to="/ingresar"><li>INGRESAR</li></Link>
                         <Link to="/registrarse"><li className="registrarse">REGISTRARSE</li></Link>
-                    </article>
+                    </article> */}
                 </ul>
             { menu }
             </nav>

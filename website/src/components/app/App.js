@@ -1,5 +1,6 @@
 import './App.css';
-import Header from "../Header/header"
+// import Header from "../Header/header"
+import Header2 from "../Header2/header"
 import Footer from "../Footer/footer"
 import Switch from "../Switch/switch"
 import React from "react"
@@ -32,7 +33,7 @@ library.add(fas, fab, faBars, faFacebookSquare, faInstagramSquare, faWhatsappSqu
 function App() {
   return (
     <React.Fragment>
-      <Header />
+      <Header2 />
     <React.StrictMode>
       <Switch />
     </React.StrictMode>

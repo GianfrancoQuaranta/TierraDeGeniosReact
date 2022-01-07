@@ -47,7 +47,7 @@ export default function Slider() {
                 return (
                     <React.Fragment key={index + 1}>
                         <div className={slideIndex === index + 1 ? "slide active-anim" : "slide"} >
-                        <img src={process.env.PUBLIC_URL + `./img/img${index + 1}.jpg`} alt={"imagen" + (index + 1)} />
+                        <img src={process.env.PUBLIC_URL + `./img/img${index + 1}.webp`} alt={"imagen" + (index + 1)} />
                         </div>
                     </React.Fragment>
                 )
