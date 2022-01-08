@@ -32,7 +32,11 @@ nav{
 
 #nav-izq{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+}
+
+#nav-izq li{
+    margin: 0 1em 0 0;
 }
 
 #nav-der{
@@ -196,11 +200,6 @@ li:hover{
 }
 
 @media (min-width: 800px) { 
-    #nav-izq{
-        display: flex;
-        justify-content: center;
-    }
-    
     /* #nav-izq li{
         margin: 0 0 0 3em;
     } */
