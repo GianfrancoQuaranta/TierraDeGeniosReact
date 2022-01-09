@@ -37,7 +37,7 @@ function Home(){
                 <div id="border"></div>
             <section id="Recaudacion" className="section-home">
                         <h2>Recaudación Activa:</h2>
-                    <iframe src="https://www.youtube.com/embed/ZgbO4biZasU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    <iframe src="https://www.youtube.com/watch?v=qNkgUOAGAOM&ab_channel=TierradeGenios" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen className="video-youtube-incrustado"></iframe>
                     <article>
                         <article id="recaudacion-flex">
