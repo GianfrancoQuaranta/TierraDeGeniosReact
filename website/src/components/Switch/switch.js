@@ -1,24 +1,30 @@
-import React from 'react';
-import {Route,Switch} from "react-router-dom";
+import React, {useEffect} from 'react';
+import {Route,Switch,useLocation} from "react-router-dom";
 import Home from "../Home/home";
 import solicitarBeca from "../Solicitar-beca/solicitarBeca";
 import Login from "../Login/login";
 import Register from "../Register/register";
 import Applicant from "../ApplicantDetail/applicant";
 import AboutUs from "../AboutUs/about-us";
-import GA from "../Scripts/GoogleAnalytics/GA"
+import ReactGa from "react-ga";
+import { faWindows } from '@fortawesome/free-brands-svg-icons';
 
-
-// componentDidUpdate = (prevProps) => {
-//     if(this.props.match.params.id !== prevProps.match.params.id ) {
-//       // fetch the new product based and set it to the state of the component
-// };
-// };
+function usePageViews(){
+    let location = useLocation();
+    useEffect(() => {
+        if (!window.GA_INITIALIZED){
+            ReactGa.initialize("G-YZ9S63BMYY");
+            faWindows.GA_INITIALIZED = true;
+        }
+        ReactGa.set({ page: location.pathname });
+        ReactGa.pageview(location.pathname);
+    },[location]);
+}
 
 function SwitchLinks(){
+    usePageViews()
     return(
         <Switch>
-            {/* <GA/> */}
             <Route exact path="/" component={Home} />
             <Route path="/solicitar-beca" component={solicitarBeca} />
             <Route path="/registrarse" component={Register} />
