@@ -10,6 +10,7 @@
 }
 
 #thank-you{
+    margin: 1em 0 0 0;
     padding: 2em;
     width: 100%;
     display: flex;
@@ -46,6 +47,7 @@
 @media (min-width: 650px) {
     #thank-you{
         justify-content: flex-start;
+        margin: 0
     }
 }
 

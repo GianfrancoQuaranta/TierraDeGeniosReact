@@ -41,9 +41,9 @@ function Home(){
                     allowFullScreen className="video-youtube-incrustado"></iframe>
                     <article>
                         <article id="recaudacion-flex">
-                            <p>Objetivo Recaudación: $246.075</p>
-                            <p>Recaudado: $10.120</p>
-                            <p>Falta: $235.955</p>
+                            <p>Objetivo Recaudación: $246.075 pesos</p>
+                            <p>Recaudado: $10.120 pesos</p>
+                            <p>Falta: $235.955 pesos</p>
                             <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380847e20cc4b017e460485700de8" className="button">Donar</a>
                         </article>
                     </article>
