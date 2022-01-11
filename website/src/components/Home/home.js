@@ -23,7 +23,7 @@ function Home(){
             < Carrusel />
             < Scroll />
             <article id="home-box-button">
-                <button id="button-header">Donar</button>
+                <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380847e20cc4b017e460485700de8" id="button-header" className="button">Donar</a>
             </article>
             <section id="Fundacion" className="section-home">
                 <article>
@@ -37,14 +37,14 @@ function Home(){
                 <div id="border"></div>
             <section id="Recaudacion" className="section-home">
                         <h2>Recaudación Activa:</h2>
-                    <iframe src="https://www.youtube.com/watch?v=qNkgUOAGAOM&ab_channel=TierradeGenios" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    <iframe src="https://www.youtube.com/embed/qNkgUOAGAOM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen className="video-youtube-incrustado"></iframe>
                     <article>
                         <article id="recaudacion-flex">
-                            <p>Objetivo Recaudación: $216.184,62</p>
-                            <p>Recaudado: $172.947,69</p>
-                            <p>Falta: $43.236,92</p>
-                            <button>Donar</button>
+                            <p>Objetivo Recaudación: $246.075</p>
+                            <p>Recaudado: $10.120</p>
+                            <p>Falta: $235.955</p>
+                            <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380847e20cc4b017e460485700de8" className="button">Donar</a>
                         </article>
                     </article>
             </section>

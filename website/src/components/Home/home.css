@@ -51,7 +51,7 @@ main{
     /* color: rgb(153, 10, 10) !important; */
 }
 
-button{
+.button{
     margin: 1em 0;
     padding: 0.5em 2em;
     background-color: #DC2D2D;
@@ -380,10 +380,10 @@ h2{
     }
     #Recaudacion p {
         margin: 1em 0 0 0;
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
     #Fundacion p{
-        font-size: 40px;
+        font-size: 36px;
     }
     #Beca h2{
         font-weight: 600;
@@ -392,7 +392,7 @@ h2{
     
     /*** NELSON ***/
     #Nelson h3{
-        font-size: 2em;
+        font-size: 1.6em;
         width: 80%;
     }
 

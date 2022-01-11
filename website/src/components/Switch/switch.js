@@ -1,13 +1,19 @@
+/** IMPORTS */
+
 import React, {useEffect} from 'react';
 import {Route,Switch,useLocation} from "react-router-dom";
 import Home from "../Home/home";
 import solicitarBeca from "../Solicitar-beca/solicitarBeca";
 import Login from "../Login/login";
+import ThankYou from "../thankYouPage/thankyou"
 import Register from "../Register/register";
 import Applicant from "../ApplicantDetail/applicant";
 import AboutUs from "../AboutUs/about-us";
+import Error from "../error404/error";
 import ReactGa from "react-ga";
 import { faWindows } from '@fortawesome/free-brands-svg-icons';
+
+/** CODE **/
 
 function usePageViews(){
     let location = useLocation();
@@ -31,6 +37,9 @@ function SwitchLinks(){
             <Route path="/ingresar" component={Login} />
             <Route path="/detalle-aplicante" component={Applicant} />
             <Route path="/sobre-nosotros" component={AboutUs} />
+            <Route path="/thank-you" component={ThankYou} />
+            <Route path="" component={Error} />
+            <Route path="*" component={Error} />
         </Switch>
     );
 }
