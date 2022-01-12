@@ -15,17 +15,23 @@ import { faWindows } from '@fortawesome/free-brands-svg-icons';
 
 /** CODE **/
 
-function usePageViews(){
-    let location = useLocation();
-    useEffect(() => {
-        if (!window.GA_INITIALIZED){
-            ReactGa.initialize("G-YZ9S63BMYY");
-            faWindows.GA_INITIALIZED = true;
-        }
-        ReactGa.set({ page: location.pathname });
-        ReactGa.pageview(location.pathname);
-    },[location]);
-}
+// function usePageViews(){
+//     let location = useLocation();
+//     useEffect(() => {
+//         if (!window.GA_INITIALIZED){
+//             ReactGa.initialize("G-YZ9S63BMYY");
+//             faWindows.GA_INITIALIZED = true;
+//         }
+//         ReactGa.set({ page: location.pathname });
+//         ReactGa.pageview(location.pathname);
+//     },[location]);
+// }
+
+useEffect(() => {
+    ReactGa.initialize("G-YZ9S63BMYY")
+
+    ReactGa.pageview(window.location.pathname)
+}, [])
 
 function SwitchLinks(){
     usePageViews()
