@@ -27,13 +27,13 @@ import { faWindows } from '@fortawesome/free-brands-svg-icons';
 //     },[location]);
 // }
 
-useEffect(() => {
-    ReactGa.initialize("G-YZ9S63BMYY")
-
-    ReactGa.pageview(window.location.pathname)
-}, [])
 
 function SwitchLinks(){
+    useEffect(() => {
+        ReactGa.initialize("G-YZ9S63BMYY")
+    
+        ReactGa.pageview(window.location.pathname)
+    }, [])
     // usePageViews()
     return(
         <Router>
