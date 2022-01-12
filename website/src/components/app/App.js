@@ -5,7 +5,7 @@ import Footer from "../Footer/footer"
 import Switch from "../Switch/switch"
 import {BrowserRouter as Router} from "react-router-dom";
 import React, {useEffect} from "react"
-import ReactGa from "react-ga";
+import ReactGa from "react-ga4";
 
 /**** Icons ****/
 
@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
       ReactGa.initialize('G-YZ9S63BMYY')
 
-      ReactGa.pageview(window.location.pathname)
+      ReactGa.send({ hitType: "home", page: "/" })
   }, [])
 
   useEffect(() => {
