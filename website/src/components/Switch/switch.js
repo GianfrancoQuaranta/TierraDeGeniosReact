@@ -34,7 +34,7 @@ useEffect(() => {
 }, [])
 
 function SwitchLinks(){
-    usePageViews()
+    // usePageViews()
     return(
         <Router>
             <Switch>
