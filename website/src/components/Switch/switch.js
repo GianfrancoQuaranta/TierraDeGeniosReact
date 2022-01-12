@@ -1,7 +1,7 @@
 /** IMPORTS */
 
 import React, {useEffect} from 'react';
-import {Route,Switch,useLocation} from "react-router-dom";
+import {Route,Switch,useLocation, BrowserRouter as Router} from "react-router-dom";
 import Home from "../Home/home";
 import solicitarBeca from "../Solicitar-beca/solicitarBeca";
 import Login from "../Login/login";
@@ -30,17 +30,19 @@ function usePageViews(){
 function SwitchLinks(){
     usePageViews()
     return(
-        <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/solicitar-beca" component={solicitarBeca} />
-            <Route path="/registrarse" component={Register} />
-            <Route path="/ingresar" component={Login} />
-            <Route path="/detalle-aplicante" component={Applicant} />
-            <Route path="/sobre-nosotros" component={AboutUs} />
-            <Route path="/thank-you" component={ThankYou} />
-            <Route path="" component={Error} />
-            <Route path="*" component={Error} />
-        </Switch>
+        <Router>
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/solicitar-beca" component={solicitarBeca} />
+                <Route path="/registrarse" component={Register} />
+                <Route path="/ingresar" component={Login} />
+                <Route path="/detalle-aplicante" component={Applicant} />
+                <Route path="/sobre-nosotros" component={AboutUs} />
+                <Route path="/thank-you" component={ThankYou} />
+                <Route path="" component={Error} />
+                <Route path="*" component={Error} />
+            </Switch>
+        </Router>
     );
 }
 

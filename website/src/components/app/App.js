@@ -4,7 +4,6 @@ import Header2 from "../Header2/header"
 import Footer from "../Footer/footer"
 import Switch from "../Switch/switch"
 import React from "react"
-import {BrowserRouter} from "react-router-dom";
 
 
 /**** Icons ****/
@@ -33,7 +32,6 @@ library.add(fas, fab, faBars, faFacebookSquare, faInstagramSquare, faWhatsappSqu
 
 function App() {
   return (
-    <BrowserRouter>
       <React.Fragment>
         <Header2 />
       <React.StrictMode>
@@ -41,7 +39,6 @@ function App() {
       </React.StrictMode>
         <Footer />
       </React.Fragment>
-    </BrowserRouter>
   );  
 }
 
