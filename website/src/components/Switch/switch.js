@@ -1,7 +1,7 @@
 /** IMPORTS */
 
-import React, {useEffect} from 'react';
-import {Route,Switch,useLocation, BrowserRouter as Router} from "react-router-dom";
+import React from 'react';
+import {Route,Switch} from "react-router-dom";
 import Home from "../Home/home";
 import solicitarBeca from "../Solicitar-beca/solicitarBeca";
 import Login from "../Login/login";
@@ -10,8 +10,7 @@ import Register from "../Register/register";
 import Applicant from "../ApplicantDetail/applicant";
 import AboutUs from "../AboutUs/about-us";
 import Error from "../error404/error";
-import ReactGa from "react-ga";
-import { faWindows } from '@fortawesome/free-brands-svg-icons';
+
 
 /** CODE **/
 
@@ -29,14 +28,8 @@ import { faWindows } from '@fortawesome/free-brands-svg-icons';
 
 
 function SwitchLinks(){
-    useEffect(() => {
-        ReactGa.initialize("G-YZ9S63BMYY")
-    
-        ReactGa.pageview(window.location.pathname)
-    }, [])
     // usePageViews()
     return(
-        <Router>
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/solicitar-beca" component={solicitarBeca} />
@@ -48,7 +41,6 @@ function SwitchLinks(){
                 <Route path="" component={Error} />
                 <Route path="*" component={Error} />
             </Switch>
-        </Router>
     );
 }
 

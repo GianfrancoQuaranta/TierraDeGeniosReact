@@ -3,8 +3,9 @@ import './App.css';
 import Header2 from "../Header2/header"
 import Footer from "../Footer/footer"
 import Switch from "../Switch/switch"
-import React from "react"
-
+import {BrowserRouter as Router} from "react-router-dom";
+import React, {useEffect} from "react"
+import ReactGa from "react-ga";
 
 /**** Icons ****/
 
@@ -31,14 +32,25 @@ library.add(fas, fab, faBars, faFacebookSquare, faInstagramSquare, faWhatsappSqu
 
 
 function App() {
+
+  useEffect(() => {
+      ReactGa.initialize('G-YZ9S63BMYY')
+
+      ReactGa.pageview(window.location.pathname)
+  }, [])
+
+  useEffect(() => {
+    console.log("hola", window.location.pathname)
+  })
+
   return (
-      <React.Fragment>
-        <Header2 />
-      <React.StrictMode>
-        <Switch />
-      </React.StrictMode>
-        <Footer />
-      </React.Fragment>
+      <Router>
+          <Header2 />
+        <React.StrictMode>
+          <Switch />
+        </React.StrictMode>
+          <Footer />
+      </Router>
   );  
 }
 
