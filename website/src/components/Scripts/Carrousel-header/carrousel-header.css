@@ -1,5 +1,5 @@
 .container-slider {
-    margin: 0.4em 0 0 0;
+    margin: 4em 0 0 0;
     width: 100%;
     height: 500px;
     position: relative;
@@ -82,4 +82,10 @@
 }
 .dot.active {
     background: rgb(32, 32, 32);
+}
+
+@media (min-width: 650px) {
+    .container-slider {
+        margin: 0.4em 0 0 0;
+    }
 }

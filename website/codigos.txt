@@ -1,0 +1,14 @@
+#titulo-centro{
+    position: absolute;
+    width: 75%;
+    top: 4em;
+    background: -webkit-linear-gradient(90deg, #DC2D2D 0.14%, #04398C 100%);
+    background-clip: text;
+    font-weight: 900;
+    text-shadow: 5px 5px 0 #fff;
+    -webkit-text-fill-color: transparent;
+    /* text-shadow: 0px 0 #fff, 0 0px #fff, 0px 0 #fff, 0 0px #fff; */
+    text-align: center;
+    font-size: 30px;
+    z-index: 1;
+}

@@ -19,7 +19,10 @@ import Beca from "./img/beca.png"
 function Home(){
     return(
         <main>
-                <h3 id='titulo-centro'>¡Apoyamos a quienes quieren estudiar y su situación económica no se los permite!.</h3>
+            <article>
+                <h3 id='titulo-centro-derecho' className='desktop-visible-home'>¡Apoyamos a quienes quieren estudiar y su situación económica no se los permite!.</h3>
+                <h3 id='titulo-centro-izquierdo' className='desktop-visible-home'>Juani quiere ser Científico de Datos, ayudemoslo a logralo! </h3>
+            </article>
             < Carrusel />
             < Scroll />
             <article id="home-box-button">

@@ -24,9 +24,6 @@ function App() {
       ReactGa.send({ hitType: "home", page: "/" })
   }, [])
 
-  useEffect(() => {
-    console.log("hola", window.location.pathname)
-  })
 
   return (
       <Router>
