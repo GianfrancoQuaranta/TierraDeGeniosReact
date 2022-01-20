@@ -3,8 +3,6 @@ import "./register.css"
 
 /*** ICONOS ***/
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 function Register (){
     return(
         <main id="main-register">

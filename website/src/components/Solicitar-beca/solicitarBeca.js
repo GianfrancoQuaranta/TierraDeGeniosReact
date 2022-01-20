@@ -49,7 +49,7 @@ function solicitarBecas(){
                             15% de tus ingresos hasta terminar de devolver un monto total de U$D 4.000, en caso de no percibir ingresos o 
                             estar momentáneamente sin trabajo, esta se pausará hasta que superes nuevamente los $100.000 mensuales. 
                         </p>
-                        <p>Para más información, <a href="#">comunícate con nosotros</a>.</p>
+                        {/* <p>Para más información, <a href="#">comunícate con nosotros</a>.</p> */}
                 <article id="flex-video">
                     <iframe src="https://www.youtube.com/embed/ZgbO4biZasU" title="YouTube video player" 
                     frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
